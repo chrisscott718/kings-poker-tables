@@ -27254,7 +27254,7 @@ var App = function (_Component) {
       return _react2.default.createElement(
         'p',
         null,
-        'This is my new react App'
+        'Welcome to Kings Poker Tables. Jason Stine is weak af.'
       );
     }
   }]);
