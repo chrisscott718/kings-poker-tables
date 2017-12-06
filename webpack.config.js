@@ -13,7 +13,8 @@ module.exports = {
   resolve: {
     modules: [
       "node_modules",  //MUST BE FIRST
-      "./containers"
+      "./containers",
+      "./components"
     ],
     alias: {
     },
@@ -40,6 +41,18 @@ module.exports = {
         }, {
           loader: 'sass-loader' // compiles SASS to CSS
         }]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              outputPath: 'images/'
+            }
+          }
+        ]
       },
       {
         test: /\.(js|jsx)$/,

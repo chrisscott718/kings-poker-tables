@@ -1,0 +1,100 @@
+@import "./../variables";
+
+
+.navbar-items {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  .circle {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    z-index: 100;
+    .background {
+      fill: white;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  &.entering {
+    opacity: 1;
+    .circle {
+      transform: scale( 100 );
+    }
+    .nav-item {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  &.entered {
+    opacity: 1;
+    .circle { transform: scale( 100 ); }
+    .nav-item {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  &.exiting {
+    opacity: 0;
+    .circle {
+      opacity: 0;
+      transform: scale( 0 );
+    }
+    .nav-item {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+  }
+  &.exited {
+    opacity: 0;
+    z-index: -1;
+    .circle {
+      opacity: 0;
+      transform: scale( 0 );
+    }
+    .nav-item {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+  }
+}
+.navbar-nav {
+  list-style: none;
+  position: relative;
+  text-align: right;
+  z-index: 200;
+  margin-top: 100px;
+  .nav-item {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    &:nth-child(2) {
+      transition-delay: 0.1s;
+    }
+    &:nth-child(3) {
+      transition-delay: 0.15s;
+    }
+    &:nth-child(4) {
+      transition-delay: 0.2s;
+    }
+    &:nth-child(5) {
+      transition-delay: 0.25s;
+    }
+    .nav-link {
+      font-weight: 800;
+      font-size: 2.5rem;
+      line-height: 2;
+      color: $primary-dark;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

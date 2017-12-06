@@ -1,0 +1,53 @@
+@import './../variables.scss';
+
+nav.navbar {
+  padding: 1.5rem 0;
+  position: relative;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.navbar-brand {
+  max-height: 20px;
+}
+
+// Nav Btn
+.navbar-toggler {
+  border: none;
+  background: none;
+  transition: all .7s ease;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 200;
+  position: relative;
+}
+
+.navbar-toggler.in {
+  .bar-top {
+   transform: translateY(8px) rotateZ(45deg);
+  }
+  .bar-middle {
+    width: 0;
+  }
+  .bar-bottom {
+    transform: translateY(-8px) rotateZ(-45deg);
+  }
+}
+.bar {
+  display: block;
+  height: 3px;
+  width: 20px;
+  margin: 5px auto;
+  background: $primary-dark;
+  transition: all .5s ease;
+}
+
+// media queries
+@media (min-width: 576px) {
+  .navbar-brand {
+    max-height: 30px;
+  }
+}

@@ -1,7 +1,13 @@
 import React, {Component} from 'react';
 
+import Navigation from 'Navigation';
+
+import './../styles/main.scss';
+
 export default class App extends Component {
   render () {
-    return <p>Welcome to Kings Poker Tables. Jason Stine is weak af.</p>
+    return (
+      <Navigation />
+    )
   }
 }
