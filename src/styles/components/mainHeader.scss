@@ -1,0 +1,42 @@
+@import "./../variables.scss";
+
+header {
+  min-height: 80vh;
+  position: relative;
+  background: #ffffff;
+  background: linear-gradient(180deg, #ffffff 0%,#e5e5e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 );
+  .jumbotron {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 80vh;
+    h1 {
+      font-size: 4rem;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    h1.h--light {
+      animation-delay: 0.1s;
+    }
+    h2 {
+      opacity: 0.8;
+      margin: 1rem 0;
+      animation-delay: 0.25s;
+    }
+    .header--cta {
+      display: flex;
+      align-items: center;
+      animation-delay: 0.25s;
+      button.btn {
+        margin-left: 1rem;
+      }
+    }
+  }
+  .header-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+  }
+}

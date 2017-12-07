@@ -1,0 +1,19 @@
+@import "./variables";
+
+.btn {
+  border: solid 1px $primary-dark;
+  color: $primary-dark;
+  padding: 0 1.5rem;
+  line-height: 3;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-default {
+  &:hover {
+    background: $primary-dark;
+    color: white;
+  }
+}
