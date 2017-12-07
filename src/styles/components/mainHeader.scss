@@ -1,16 +1,16 @@
 @import "./../variables.scss";
 
 header {
-  min-height: 80vh;
   position: relative;
   background: #ffffff;
-  background: linear-gradient(180deg, #ffffff 0%,#e5e5e5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 );
+  background: linear-gradient(180deg, #ffffff 0%,#eeeeee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 );
   .jumbotron {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 75vh;
+    position: relative;
     h1 {
       font-size: 4rem;
       line-height: 1.2;
@@ -37,6 +37,19 @@ header {
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 0;
     width: 500px;
+  }
+  .header--bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    font-weight: 100;
+    .lnr {
+      margin-left: 0.5rem;
+    }
   }
 }

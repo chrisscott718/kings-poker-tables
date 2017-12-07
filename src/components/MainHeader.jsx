@@ -17,7 +17,10 @@ export default class MainHeader extends Component {
             </div>
           </div>
         </div>
-        <img className="header-img" src='./images/header-bg.png' />
+        <img className="header-img animated fadeIn" src='./images/header-bg.png' />
+        <div className="header--bottom">
+          BUILD YOUR OWN <span className="lnr lnr-chevron-down"></span>
+        </div>
       </header>
     )
   }
