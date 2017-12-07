@@ -12,6 +12,10 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: $primary-dark;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // font-family: Camphor, Open Sans, Segoe UI, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,6 +27,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+// sections
+.section-heading {
+  text-align: center;
+}
+.main-section {
+  padding: 3rem;
+}
+
 
 /// MEDIA QUERIES
 

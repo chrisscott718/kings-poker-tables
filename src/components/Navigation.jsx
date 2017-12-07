@@ -8,10 +8,16 @@ export default class Navigation extends Component {
     super(props);
     this.state = { in: false }
     this.toggleNavigation = this.toggleNavigation.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  toggleNavigation() {
+  toggleNavigation(el) {
     this.setState({in: !this.state.in});
+  }
+
+  handleClick(section) {
+    this.toggleNavigation();
+    this.props.scrollToElement(section);
   }
 
   render () {
@@ -27,34 +33,32 @@ export default class Navigation extends Component {
             <div className="bar bar-bottom"></div>
           </button>
         </div>
-        <NavItems in={!!this.state.in} />
+        <NavItems in={!!this.state.in} handleClick={this.handleClick}/>
       </nav>
     )
   }
 }
+
 import './../styles/components/navItems.scss';
 const navDuration = 300;
 
-const NavItems = ({ in: inProp }) => (
+const NavItems = ({ in: inProp, handleClick }) => (
   <Transition in={inProp} timeout={navDuration}>
     { (state) => (
       <div className={`navbar-items ${state}`}>
         <div className="container">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link">Home</a>
+            <button className="nav-link" onClick={handleClick.bind(this,'byo')}>Build Your Own</button>
           </li>
           <li className="nav-item">
-            <a className="nav-link">Build Your Own</a>
+            <button className="nav-link" onClick={handleClick.bind(this,'col')}>Collections</button>
           </li>
           <li className="nav-item">
-            <a className="nav-link">Collections</a>
+            <button className="nav-link" onClick={handleClick.bind(this,'sty')}>Our Story</button>
           </li>
           <li className="nav-item">
-            <a className="nav-link">Our Story</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link">Contact Us</a>
+            <button className="nav-link" onClick={handleClick.bind(this,'con')}>Contact Us</button>
           </li>
         </ul>
         </div>

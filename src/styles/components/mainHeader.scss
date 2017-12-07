@@ -7,49 +7,102 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 );
   .jumbotron {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    min-height: 75vh;
     position: relative;
+    padding: 3rem 0;
+    z-index: 1;
     h1 {
-      font-size: 4rem;
-      line-height: 1.2;
       text-transform: uppercase;
+      line-height: 1.2;
+      font-size: 2.5rem;
     }
     h1.h--light {
       animation-delay: 0.1s;
     }
     h2 {
-      opacity: 0.8;
+      color: #717171;
       margin: 1rem 0;
       animation-delay: 0.25s;
-    }
-    .header--cta {
-      display: flex;
-      align-items: center;
-      animation-delay: 0.25s;
-      button.btn {
-        margin-left: 1rem;
-      }
+      font-size: 1.2rem;
     }
   }
   .header-img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-    width: 500px;
+    display: none;
   }
-  .header--bottom {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+}
+.header--cta {
+  display: flex;
+  align-items: flex-start;
+  animation-delay: 0.25s;
+  flex-direction: column;
+  button {
+    margin-top: 1rem;
+  }
+}
+.header--bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 100;
+  .lnr {
+    margin-left: 0.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  header {
+    .header-img {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 250px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  header {
+    .jumbotron {
+      padding: 5rem 0;
+    }
+  }
+  .header--cta {
+    flex-direction: row;
     align-items: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    font-weight: 100;
-    .lnr {
-      margin-left: 0.5rem;
+    button {
+      margin-top: 0;
+      margin-left: 1rem;
+    }
+  }
+}
+@media (min-width: 992px) {
+  header {
+    .jumbotron {
+      min-height: 70vh;
+      padding: 0;
+      justify-content: center;
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+    .header-img {
+      width: 400px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    .jumbotron {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+    .header-img {
+      width: 500px;
     }
   }
 }
