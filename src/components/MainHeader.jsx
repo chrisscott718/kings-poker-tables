@@ -22,15 +22,14 @@ export default class MainHeader extends Component {
             <h1 className="h--light animated fadeInUp">Redefined</h1>
             <h2 className="h--light animated fadeIn">Customized luxury poker tables made to perfection.</h2>
             <div className="header--cta animated fadeIn">
-              <span><strong>Call Us <a href="tel:800-897-1189">(800) 897-1189</a></strong></span>
               <button className="btn btn-default" onClick={this.handleScroll}>Start Building</button>
             </div>
           </div>
+          <div className="header--bottom">
+            <span className="arrow arrow-down"></span>
+          </div>
         </div>
         <img className="header-img animated fadeIn" src='./images/header-bg.png' />
-        <div className="header--bottom">
-          SEE MORE <span className="lnr lnr-chevron-down"></span>
-        </div>
       </header>
     )
   }

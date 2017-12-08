@@ -17,7 +17,9 @@
     "express": "^4.16.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-transition-group": "^2.2.1"
+    "react-swipe": "^5.1.0",
+    "react-transition-group": "^2.2.1",
+    "swipe-js-iso": "^2.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.1",

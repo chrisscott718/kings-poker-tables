@@ -30002,7 +30002,7 @@ exports = module.exports = __webpack_require__(54)(undefined);
 
 
 // module
-exports.push([module.i, "nav.navbar {\n  padding: 1.5rem 0;\n  position: relative; }\n\n.nav-container {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.navbar-brand {\n  max-height: 20px; }\n\n.navbar-toggler {\n  border: none;\n  background: none;\n  -webkit-transition: all .7s ease;\n  transition: all .7s ease;\n  width: 35px;\n  height: 35px;\n  cursor: pointer;\n  z-index: 200;\n  position: relative; }\n\n.navbar-toggler.in .bar-top {\n  -webkit-transform: translateY(8px) rotateZ(45deg);\n          transform: translateY(8px) rotateZ(45deg); }\n\n.navbar-toggler.in .bar-middle {\n  width: 0; }\n\n.navbar-toggler.in .bar-bottom {\n  -webkit-transform: translateY(-8px) rotateZ(-45deg);\n          transform: translateY(-8px) rotateZ(-45deg); }\n\n.bar {\n  display: block;\n  height: 3px;\n  width: 20px;\n  margin: 5px auto;\n  background: #2d2505;\n  -webkit-transition: all .5s ease;\n  transition: all .5s ease; }\n\n@media (min-width: 576px) {\n  .navbar-brand {\n    max-height: 30px; } }\n", ""]);
+exports.push([module.i, "nav.navbar {\n  padding: 1.5rem 0;\n  position: relative; }\n\n.nav-container {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.navbar-brand {\n  max-height: 20px; }\n\n.navbar-toggler {\n  border: none;\n  background: none;\n  -webkit-transition: all .7s ease;\n  transition: all .7s ease;\n  width: 35px;\n  height: 35px;\n  cursor: pointer;\n  z-index: 200;\n  position: relative; }\n\n.navbar-toggler.in .bar-top {\n  -webkit-transform: translateY(8px) rotateZ(45deg);\n          transform: translateY(8px) rotateZ(45deg); }\n\n.navbar-toggler.in .bar-middle {\n  width: 0; }\n\n.navbar-toggler.in .bar-bottom {\n  -webkit-transform: translateY(-8px) rotateZ(-45deg);\n          transform: translateY(-8px) rotateZ(-45deg); }\n\n.bar {\n  display: block;\n  height: 3px;\n  width: 20px;\n  margin: 5px auto;\n  background: #21201f;\n  -webkit-transition: all .5s ease;\n  transition: all .5s ease; }\n\n@media (min-width: 576px) {\n  .navbar-brand {\n    max-height: 30px; } }\n", ""]);
 
 // exports
 
@@ -30142,7 +30142,7 @@ exports = module.exports = __webpack_require__(54)(undefined);
 
 
 // module
-exports.push([module.i, ".navbar-items {\n  position: fixed;\n  top: 0;\n  right: 0;\n  z-index: 100;\n  width: 100vw;\n  height: 100vh;\n  -webkit-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n  overflow: hidden; }\n  .navbar-items .circle {\n    -webkit-transition: all 0.3s ease-in-out;\n    transition: all 0.3s ease-in-out;\n    position: absolute;\n    top: 0;\n    right: 0;\n    width: 36px;\n    height: 36px;\n    z-index: 100; }\n  .navbar-items .circle .background {\n      fill: white;\n      -webkit-transition: all 0.2s ease-in-out;\n      transition: all 0.2s ease-in-out; }\n  .navbar-items.entering {\n    opacity: 1; }\n  .navbar-items.entering .circle {\n      -webkit-transform: scale(100);\n              transform: scale(100); }\n  .navbar-items.entering .nav-item {\n      -webkit-transform: translateX(0);\n              transform: translateX(0);\n      opacity: 1; }\n  .navbar-items.entered {\n    opacity: 1; }\n  .navbar-items.entered .circle {\n      -webkit-transform: scale(100);\n              transform: scale(100); }\n  .navbar-items.entered .nav-item {\n      -webkit-transform: translateX(0px);\n              transform: translateX(0px);\n      opacity: 1; }\n  .navbar-items.exiting {\n    opacity: 0; }\n  .navbar-items.exiting .circle {\n      opacity: 0;\n      -webkit-transform: scale(0);\n              transform: scale(0); }\n  .navbar-items.exiting .nav-item {\n      -webkit-transform: translateX(200px);\n              transform: translateX(200px);\n      opacity: 0; }\n  .navbar-items.exited {\n    opacity: 0;\n    z-index: -1; }\n  .navbar-items.exited .circle {\n      opacity: 0;\n      -webkit-transform: scale(0);\n              transform: scale(0); }\n  .navbar-items.exited .nav-item {\n      -webkit-transform: translateX(200px);\n              transform: translateX(200px);\n      opacity: 0; }\n  .navbar-nav {\n  list-style: none;\n  position: relative;\n  text-align: right;\n  z-index: 200;\n  margin-top: 100px; }\n  .navbar-nav .nav-item {\n    display: block;\n    -webkit-transition: all 0.2s ease-in-out;\n    transition: all 0.2s ease-in-out; }\n  .navbar-nav .nav-item:nth-child(2) {\n      -webkit-transition-delay: 0.1s;\n              transition-delay: 0.1s; }\n  .navbar-nav .nav-item:nth-child(3) {\n      -webkit-transition-delay: 0.15s;\n              transition-delay: 0.15s; }\n  .navbar-nav .nav-item:nth-child(4) {\n      -webkit-transition-delay: 0.2s;\n              transition-delay: 0.2s; }\n  .navbar-nav .nav-item:nth-child(5) {\n      -webkit-transition-delay: 0.25s;\n              transition-delay: 0.25s; }\n  .navbar-nav .nav-item .nav-link {\n      font-weight: 800;\n      font-size: 2.5rem;\n      line-height: 2;\n      color: #2d2505;\n      padding: 0;\n      background: none;\n      border: none;\n      cursor: pointer; }\n  .navbar-nav .nav-item .nav-link:hover {\n        text-decoration: underline; }\n", ""]);
+exports.push([module.i, ".navbar-items {\n  position: fixed;\n  top: 0;\n  right: 0;\n  z-index: 100;\n  width: 100vw;\n  height: 100vh;\n  -webkit-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n  overflow: hidden; }\n  .navbar-items .circle {\n    -webkit-transition: all 0.3s ease-in-out;\n    transition: all 0.3s ease-in-out;\n    position: absolute;\n    top: 0;\n    right: 0;\n    width: 36px;\n    height: 36px;\n    z-index: 100; }\n  .navbar-items .circle .background {\n      fill: white;\n      -webkit-transition: all 0.2s ease-in-out;\n      transition: all 0.2s ease-in-out; }\n  .navbar-items.entering {\n    opacity: 1; }\n  .navbar-items.entering .circle {\n      -webkit-transform: scale(100);\n              transform: scale(100); }\n  .navbar-items.entering .nav-item {\n      -webkit-transform: translateX(0);\n              transform: translateX(0);\n      opacity: 1; }\n  .navbar-items.entered {\n    opacity: 1; }\n  .navbar-items.entered .circle {\n      -webkit-transform: scale(100);\n              transform: scale(100); }\n  .navbar-items.entered .nav-item {\n      -webkit-transform: translateX(0px);\n              transform: translateX(0px);\n      opacity: 1; }\n  .navbar-items.exiting {\n    opacity: 0; }\n  .navbar-items.exiting .circle {\n      opacity: 0;\n      -webkit-transform: scale(0);\n              transform: scale(0); }\n  .navbar-items.exiting .nav-item {\n      -webkit-transform: translateX(200px);\n              transform: translateX(200px);\n      opacity: 0; }\n  .navbar-items.exited {\n    opacity: 0;\n    z-index: -1; }\n  .navbar-items.exited .circle {\n      opacity: 0;\n      -webkit-transform: scale(0);\n              transform: scale(0); }\n  .navbar-items.exited .nav-item {\n      -webkit-transform: translateX(200px);\n              transform: translateX(200px);\n      opacity: 0; }\n  .navbar-nav {\n  list-style: none;\n  position: relative;\n  text-align: right;\n  z-index: 200;\n  margin-top: 100px; }\n  .navbar-nav .nav-item {\n    display: block;\n    -webkit-transition: all 0.2s ease-in-out;\n    transition: all 0.2s ease-in-out; }\n  .navbar-nav .nav-item:nth-child(2) {\n      -webkit-transition-delay: 0.1s;\n              transition-delay: 0.1s; }\n  .navbar-nav .nav-item:nth-child(3) {\n      -webkit-transition-delay: 0.15s;\n              transition-delay: 0.15s; }\n  .navbar-nav .nav-item:nth-child(4) {\n      -webkit-transition-delay: 0.2s;\n              transition-delay: 0.2s; }\n  .navbar-nav .nav-item:nth-child(5) {\n      -webkit-transition-delay: 0.25s;\n              transition-delay: 0.25s; }\n  .navbar-nav .nav-item .nav-link {\n      font-weight: 800;\n      font-size: 2.5rem;\n      line-height: 2;\n      color: #21201f;\n      padding: 0;\n      background: none;\n      border: none;\n      cursor: pointer; }\n  .navbar-nav .nav-item .nav-link:hover {\n        text-decoration: underline; }\n", ""]);
 
 // exports
 
@@ -30222,34 +30222,19 @@ var MainHeader = function (_Component) {
               'div',
               { className: 'header--cta animated fadeIn' },
               _react2.default.createElement(
-                'span',
-                null,
-                _react2.default.createElement(
-                  'strong',
-                  null,
-                  'Call Us ',
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'tel:800-897-1189' },
-                    '(800) 897-1189'
-                  )
-                )
-              ),
-              _react2.default.createElement(
                 'button',
                 { className: 'btn btn-default', onClick: this.handleScroll },
                 'Start Building'
               )
             )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'header--bottom' },
+            _react2.default.createElement('span', { className: 'arrow arrow-down' })
           )
         ),
-        _react2.default.createElement('img', { className: 'header-img animated fadeIn', src: './images/header-bg.png' }),
-        _react2.default.createElement(
-          'div',
-          { className: 'header--bottom' },
-          'SEE MORE ',
-          _react2.default.createElement('span', { className: 'lnr lnr-chevron-down' })
-        )
+        _react2.default.createElement('img', { className: 'header-img animated fadeIn', src: './images/header-bg.png' })
       );
     }
   }]);
@@ -30299,7 +30284,7 @@ exports = module.exports = __webpack_require__(54)(undefined);
 
 
 // module
-exports.push([module.i, "header {\n  position: relative;\n  background: #ffffff;\n  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eeeeee));\n  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 ); }\n  header .jumbotron {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: start;\n        -ms-flex-pack: start;\n            justify-content: flex-start;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    position: relative;\n    padding: 3rem 0;\n    z-index: 1; }\n  header .jumbotron h1 {\n      text-transform: uppercase;\n      line-height: 1.2;\n      font-size: 2.5rem; }\n  header .jumbotron h1.h--light {\n      -webkit-animation-delay: 0.1s;\n              animation-delay: 0.1s; }\n  header .jumbotron h2 {\n      color: #717171;\n      margin: 1rem 0;\n      -webkit-animation-delay: 0.25s;\n              animation-delay: 0.25s;\n      font-size: 1.2rem; }\n  header .header-img {\n    display: none; }\n  .header--cta {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: start;\n      -ms-flex-align: start;\n          align-items: flex-start;\n  -webkit-animation-delay: 0.25s;\n          animation-delay: 0.25s;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  .header--cta button {\n    margin-top: 1rem; }\n  .header--bottom {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 1rem 0;\n  font-size: 0.9rem;\n  font-weight: 100; }\n  .header--bottom .lnr {\n    margin-left: 0.5rem; }\n  @media (min-width: 576px) {\n  header .header-img {\n    display: block;\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    width: 250px; } }\n  @media (min-width: 768px) {\n  header .jumbotron {\n    padding: 5rem 0; }\n  .header--cta {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    .header--cta button {\n      margin-top: 0;\n      margin-left: 1rem; } }\n  @media (min-width: 992px) {\n  header .jumbotron {\n    min-height: 70vh;\n    padding: 0;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center; }\n    header .jumbotron h1 {\n      font-size: 3.5rem; }\n  header .header-img {\n    width: 400px; } }\n  @media (min-width: 1200px) {\n  header .jumbotron h1 {\n    font-size: 4rem; }\n  header .header-img {\n    width: 500px; } }\n", ""]);
+exports.push([module.i, "header {\n  position: relative;\n  background: #ffffff;\n  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eeeeee));\n  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 ); }\n  header .jumbotron {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: start;\n        -ms-flex-pack: start;\n            justify-content: flex-start;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    position: relative;\n    padding: 3rem 0;\n    z-index: 1; }\n  header .jumbotron h1 {\n      text-transform: uppercase;\n      line-height: 1.2;\n      font-size: 2.5rem; }\n  header .jumbotron h1.h--light {\n      -webkit-animation-delay: 0.1s;\n              animation-delay: 0.1s; }\n  header .jumbotron h2 {\n      color: #717171;\n      margin: 1rem 0;\n      -webkit-animation-delay: 0.25s;\n              animation-delay: 0.25s;\n      font-size: 1.2rem; }\n  header .header-img {\n    display: none; }\n  .header--cta {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: start;\n      -ms-flex-align: start;\n          align-items: flex-start;\n  -webkit-animation-delay: 0.25s;\n          animation-delay: 0.25s;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  .header--cta button {\n    margin-top: 0.5rem;\n    margin-bottom: 1rem; }\n  @-webkit-keyframes reveal {\n  from {\n    -webkit-transform: scaleY(0);\n            transform: scaleY(0);\n    opacity: 0; }\n  to {\n    -webkit-transform: scaleY(100%);\n            transform: scaleY(100%);\n    opacity: 1; } }\n  @keyframes reveal {\n  from {\n    -webkit-transform: scaleY(0);\n            transform: scaleY(0);\n    opacity: 0; }\n  to {\n    -webkit-transform: scaleY(100%);\n            transform: scaleY(100%);\n    opacity: 1; } }\n  @media (min-width: 576px) {\n  header .header-img {\n    display: block;\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    width: 250px; } }\n  @media (min-width: 768px) {\n  header .jumbotron {\n    padding: 5rem 0; }\n  .header--bottom {\n    position: absolute;\n    left: 15px;\n    bottom: -50px;\n    border-right: solid 2px #21201f;\n    height: 120px;\n    -webkit-animation-name: reveal;\n            animation-name: reveal;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-duration: 0.5s;\n            animation-duration: 0.5s;\n    -webkit-animation-direction: normal;\n            animation-direction: normal;\n    -webkit-animation-delay: 0.3s;\n            animation-delay: 0.3s;\n    opacity: 0; }\n    .header--bottom .arrow-down {\n      width: 10px;\n      height: 10px;\n      display: block;\n      border-left: solid 2px #21201f;\n      border-bottom: solid 2px #21201f;\n      position: absolute;\n      -webkit-transform: rotate(-45deg);\n              transform: rotate(-45deg);\n      bottom: 0;\n      left: -5px; } }\n  @media (min-width: 992px) {\n  header .jumbotron {\n    min-height: 80vh;\n    padding: 0;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center; }\n    header .jumbotron h1 {\n      font-size: 3.5rem; }\n  header .header-img {\n    width: 400px; } }\n  @media (min-width: 1200px) {\n  header .jumbotron h1 {\n    font-size: 4rem; }\n  header .header-img {\n    width: 500px; } }\n", ""]);
 
 // exports
 
@@ -30320,6 +30305,10 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = __webpack_require__(22);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _TableBuilder = __webpack_require__(383);
+
+var _TableBuilder2 = _interopRequireDefault(_TableBuilder);
 
 __webpack_require__(379);
 
@@ -30365,7 +30354,8 @@ var BuildYourOwn = function (_Component) {
                 { className: 'h--light text-secondary' },
                 'Customize your table below and we\'ll send you a quote'
               )
-            )
+            ),
+            _react2.default.createElement(_TableBuilder2.default, null)
           )
         )
       );
@@ -30417,7 +30407,7 @@ exports = module.exports = __webpack_require__(54)(undefined);
 
 
 // module
-exports.push([module.i, "#build-your-own-table {\n  background: #2d2505;\n  min-height: 100vh;\n  color: white; }\n", ""]);
+exports.push([module.i, "#build-your-own-table {\n  min-height: 100vh; }\n", ""]);
 
 // exports
 
@@ -30462,9 +30452,953 @@ exports = module.exports = __webpack_require__(54)(undefined);
 
 
 // module
-exports.push([module.i, ".h--light {\n  font-weight: 200; }\n\n.text-secondary {\n  opacity: 0.7; }\n\nh1.display-1 {\n  font-size: 4rem; }\n\n.btn {\n  border: solid 1px #2d2505;\n  color: #2d2505;\n  padding: 0 1.5rem;\n  line-height: 3;\n  font-size: 16px;\n  cursor: pointer;\n  border-radius: 2px;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n  background: none; }\n\n.btn-default:hover {\n  background: #2d2505;\n  color: white; }\n\n:root {\n  font-size: 16px; }\n\nbody {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif;\n  font-size: 1rem;\n  font-weight: normal;\n  line-height: 1.5;\n  color: #2d2505;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nh1, h2, h3, h4, h5, h6 {\n  margin: 0; }\n\n.container {\n  margin: 0 auto;\n  padding: 0 1rem; }\n\n.section-heading {\n  text-align: center; }\n\n.main-section {\n  padding: 3rem; }\n\n@media (min-width: 576px) {\n  .container {\n    max-width: 540px; } }\n\n@media (min-width: 768px) {\n  .container {\n    max-width: 720px; } }\n\n@media (min-width: 992px) {\n  .container {\n    max-width: 960px; } }\n\n@media (min-width: 1200px) {\n  .container {\n    max-width: 1140px; } }\n", ""]);
+exports.push([module.i, ".h--light {\n  font-weight: 200; }\n\n.text-secondary {\n  opacity: 0.7; }\n\nh1.display-1 {\n  font-size: 3rem; }\n\n.btn {\n  border: none;\n  background: #21201f;\n  color: white;\n  font-weight: bold;\n  padding: 0 1.5rem;\n  line-height: 4;\n  font-size: 16px;\n  cursor: pointer;\n  border-radius: 3px;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n  font-size: 14px;\n  text-transform: uppercase;\n  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);\n          box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2); }\n\n.btn-default:hover {\n  background: #3b3a38;\n  color: white;\n  -webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.1);\n          box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.1);\n  -webkit-transform: translateY(-1px);\n          transform: translateY(-1px); }\n\n.btn-default:active {\n  -webkit-transform: translateY(1px);\n          transform: translateY(1px);\n  background: #070706;\n  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);\n          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }\n\n:root {\n  font-size: 16px; }\n\nbody {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif;\n  font-size: 1rem;\n  font-weight: normal;\n  line-height: 1.5;\n  color: #21201f;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background: #ffffff;\n  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eeeeee));\n  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 ); }\n\nh1, h2, h3, h4, h5, h6 {\n  margin: 0; }\n\n.container {\n  margin: 0 auto;\n  padding: 0 1rem;\n  position: relative; }\n\n.section-heading {\n  text-align: center; }\n\n.main-section {\n  padding: 4rem; }\n\n@media (min-width: 576px) {\n  .container {\n    max-width: 540px; } }\n\n@media (min-width: 768px) {\n  .container {\n    max-width: 720px; } }\n\n@media (min-width: 992px) {\n  .container {\n    max-width: 960px; } }\n\n@media (min-width: 1200px) {\n  .container {\n    max-width: 1140px; } }\n", ""]);
 
 // exports
+
+
+/***/ }),
+/* 383 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSwipe = __webpack_require__(386);
+
+var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+__webpack_require__(384);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TableBuilder = function (_Component) {
+  _inherits(TableBuilder, _Component);
+
+  function TableBuilder(props) {
+    _classCallCheck(this, TableBuilder);
+
+    var _this = _possibleConstructorReturn(this, (TableBuilder.__proto__ || Object.getPrototypeOf(TableBuilder)).call(this, props));
+
+    _this.state = {
+      tableShape: '',
+      pedestal: '',
+      armRest: '',
+      fabricColor: '',
+      chipRack: '',
+      tableWood: '',
+      cups: '',
+      diningTop: false,
+      currentStep: 1
+    };
+
+    _this.next = _this.next.bind(_this);
+    _this.prev = _this.prev.bind(_this);
+    return _this;
+  }
+
+  _createClass(TableBuilder, [{
+    key: 'next',
+    value: function next() {
+      this.reactSwipe.next();
+    }
+  }, {
+    key: 'prev',
+    value: function prev() {
+      this.reactSwipe.prev();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        'section',
+        { id: 'tableBuilder' },
+        _react2.default.createElement(
+          'div',
+          { id: 'stepIndicator' },
+          'steps for the build your own section go here'
+        ),
+        _react2.default.createElement(
+          'div',
+          { id: 'optionSelector' },
+          _react2.default.createElement(
+            _reactSwipe2.default,
+            { ref: function ref(reactSwipe) {
+                return _this2.reactSwipe = reactSwipe;
+              }, className: 'carousel', swipeOptions: { continuous: false } },
+            _react2.default.createElement(
+              'div',
+              null,
+              '1. options selectors go here'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              '2. options selectors go here'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              '3. options selectors go here'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              '4. options selectors go here'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              '5. options selectors go here'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              '6. options selectors go here'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              '7. options selectors go here'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              '8. options selectors go here'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              '9. options selectors go here'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { id: 'mainControls' },
+          _react2.default.createElement(
+            'button',
+            { type: 'button', onClick: this.prev },
+            'Prev'
+          ),
+          _react2.default.createElement(
+            'button',
+            { type: 'button', onClick: this.next },
+            'Next'
+          )
+        )
+      );
+    }
+  }]);
+
+  return TableBuilder;
+}(_react.Component);
+
+exports.default = TableBuilder;
+
+/***/ }),
+/* 384 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(385);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(55)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/postcss-loader/lib/index.js??ref--0-2!../../../node_modules/sass-loader/lib/loader.js!./tableBuilder.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/postcss-loader/lib/index.js??ref--0-2!../../../node_modules/sass-loader/lib/loader.js!./tableBuilder.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 385 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(54)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 386 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _propTypes = __webpack_require__(72);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _swipeJsIso = __webpack_require__(387);
+
+var _swipeJsIso2 = _interopRequireDefault(_swipeJsIso);
+
+var _objectAssign = __webpack_require__(52);
+
+var _objectAssign2 = _interopRequireDefault(_objectAssign);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ReactSwipe = function (_Component) {
+  _inherits(ReactSwipe, _Component);
+
+  function ReactSwipe() {
+    _classCallCheck(this, ReactSwipe);
+
+    return _possibleConstructorReturn(this, (ReactSwipe.__proto__ || Object.getPrototypeOf(ReactSwipe)).apply(this, arguments));
+  }
+
+  _createClass(ReactSwipe, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var swipeOptions = this.props.swipeOptions;
+
+
+      this.swipe = (0, _swipeJsIso2.default)(this.container, swipeOptions);
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      this.swipe.kill();
+      this.swipe = void 0;
+    }
+  }, {
+    key: 'next',
+    value: function next() {
+      this.swipe.next();
+    }
+  }, {
+    key: 'prev',
+    value: function prev() {
+      this.swipe.prev();
+    }
+  }, {
+    key: 'slide',
+    value: function slide() {
+      var _swipe;
+
+      (_swipe = this.swipe).slide.apply(_swipe, arguments);
+    }
+  }, {
+    key: 'getPos',
+    value: function getPos() {
+      return this.swipe.getPos();
+    }
+  }, {
+    key: 'getNumSlides',
+    value: function getNumSlides() {
+      return this.swipe.getNumSlides();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          id = _props.id,
+          className = _props.className,
+          style = _props.style,
+          children = _props.children;
+
+
+      return _react2.default.createElement(
+        'div',
+        { ref: function ref(container) {
+            return _this2.container = container;
+          }, id: id, className: 'react-swipe-container ' + className, style: style.container },
+        _react2.default.createElement(
+          'div',
+          { style: style.wrapper },
+          _react2.default.Children.map(children, function (child) {
+            if (!child) {
+              return null;
+            }
+
+            var childStyle = child.props.style ? (0, _objectAssign2.default)({}, style.child, child.props.style) : style.child;
+
+            return _react2.default.cloneElement(child, { style: childStyle });
+          })
+        )
+      );
+    }
+  }]);
+
+  return ReactSwipe;
+}(_react.Component);
+
+ReactSwipe.propTypes = {
+  swipeOptions: _propTypes2.default.shape({
+    startSlide: _propTypes2.default.number,
+    speed: _propTypes2.default.number,
+    auto: _propTypes2.default.number,
+    continuous: _propTypes2.default.bool,
+    disableScroll: _propTypes2.default.bool,
+    stopPropagation: _propTypes2.default.bool,
+    swiping: _propTypes2.default.func,
+    callback: _propTypes2.default.func,
+    transitionEnd: _propTypes2.default.func
+  }),
+  style: _propTypes2.default.shape({
+    container: _propTypes2.default.object,
+    wrapper: _propTypes2.default.object,
+    child: _propTypes2.default.object
+  }),
+  id: _propTypes2.default.string,
+  className: _propTypes2.default.string
+};
+ReactSwipe.defaultProps = {
+  swipeOptions: {},
+  style: {
+    container: {
+      overflow: 'hidden',
+      visibility: 'hidden',
+      position: 'relative'
+    },
+
+    wrapper: {
+      overflow: 'hidden',
+      position: 'relative'
+    },
+
+    child: {
+      float: 'left',
+      width: '100%',
+      position: 'relative',
+      transitionProperty: 'transform'
+    }
+  },
+  className: ''
+};
+exports.default = ReactSwipe;
+module.exports = exports['default'];
+
+
+/***/ }),
+/* 387 */
+/***/ (function(module, exports) {
+
+/*
+ * Swipe 2.0.0
+ * Brad Birdsall
+ * https://github.com/thebird/Swipe
+ * Copyright 2013-2015, MIT License
+ *
+*/
+
+(function (root, factory) {
+    if (typeof module !== 'undefined' && module.exports) {
+        module.exports = factory();
+    } else {
+        root.Swipe = factory();
+    }
+}(this, function () {
+  'use strict';
+
+  return function Swipe (container, options) {
+    // utilities
+    var noop = function() {}; // simple no operation function
+    var offloadFn = function(fn) { setTimeout(fn || noop, 0); }; // offload a functions execution
+
+    // check browser capabilities
+    var browser = {
+      addEventListener: !!window.addEventListener,
+      touch: ('ontouchstart' in window) || window.DocumentTouch && document instanceof window.DocumentTouch,
+      transitions: (function(temp) {
+        var props = ['transitionProperty', 'WebkitTransition', 'MozTransition', 'OTransition', 'msTransition'];
+        for ( var i in props ) if (temp.style[ props[i] ] !== undefined) return true;
+        return false;
+      })(document.createElement('swipe'))
+    };
+
+    // quit if no root element
+    if (!container) return;
+    var element = container.children[0];
+    var slides, slidePos, width, length;
+    options = options || {};
+    var index = parseInt(options.startSlide, 10) || 0;
+    var speed = options.speed || 300;
+    var continuous = options.continuous = options.continuous !== undefined ? options.continuous : true;
+
+    function setup() {
+
+      // cache slides
+      slides = element.children;
+      length = slides.length;
+
+      // set continuous to false if only one slide
+      continuous = slides.length < 2 ? false : options.continuous;
+
+      //special case if two slides
+      if (browser.transitions && continuous && slides.length < 3) {
+        element.appendChild(slides[0].cloneNode(true));
+        element.appendChild(element.children[1].cloneNode(true));
+        slides = element.children;
+      }
+
+      // create an array to store current positions of each slide
+      slidePos = new Array(slides.length);
+
+      // determine width of each slide
+      width = Math.round(container.getBoundingClientRect().width || container.offsetWidth);
+
+      element.style.width = (slides.length * width) + 'px';
+
+      // stack elements
+      var pos = slides.length;
+      while(pos--) {
+
+        var slide = slides[pos];
+
+        slide.style.width = width + 'px';
+        slide.setAttribute('data-index', pos);
+
+        if (browser.transitions) {
+          slide.style.left = (pos * -width) + 'px';
+          move(pos, index > pos ? -width : (index < pos ? width : 0), 0);
+        }
+
+      }
+
+      // reposition elements before and after index
+      if (continuous && browser.transitions) {
+        move(circle(index-1), -width, 0);
+        move(circle(index+1), width, 0);
+      }
+
+      if (!browser.transitions) element.style.left = (index * -width) + 'px';
+
+      container.style.visibility = 'visible';
+
+    }
+
+    function prev() {
+
+      if (continuous) slide(index-1);
+      else if (index) slide(index-1);
+
+    }
+
+    function next() {
+
+      if (continuous) slide(index+1);
+      else if (index < slides.length - 1) slide(index+1);
+
+    }
+
+    function circle(index) {
+
+      // a simple positive modulo using slides.length
+      return (slides.length + (index % slides.length)) % slides.length;
+
+    }
+
+    function slide(to, slideSpeed) {
+
+      // do nothing if already on requested slide
+      if (index == to) return;
+
+      if (browser.transitions) {
+
+        var direction = Math.abs(index-to) / (index-to); // 1: backward, -1: forward
+
+        // get the actual position of the slide
+        if (continuous) {
+          var natural_direction = direction;
+          direction = -slidePos[circle(to)] / width;
+
+          // if going forward but to < index, use to = slides.length + to
+          // if going backward but to > index, use to = -slides.length + to
+          if (direction !== natural_direction) to =  -direction * slides.length + to;
+
+        }
+
+        var diff = Math.abs(index-to) - 1;
+
+        // move all the slides between index and to in the right direction
+        while (diff--) move( circle((to > index ? to : index) - diff - 1), width * direction, 0);
+
+        to = circle(to);
+
+        move(index, width * direction, slideSpeed || speed);
+        move(to, 0, slideSpeed || speed);
+
+        if (continuous) move(circle(to - direction), -(width * direction), 0); // we need to get the next in place
+
+      } else {
+
+        to = circle(to);
+        animate(index * -width, to * -width, slideSpeed || speed);
+        //no fallback for a circular continuous if the browser does not accept transitions
+      }
+
+      index = to;
+      offloadFn(options.callback && options.callback(index, slides[index]));
+    }
+
+    function move(index, dist, speed) {
+
+      translate(index, dist, speed);
+      slidePos[index] = dist;
+
+    }
+
+    function translate(index, dist, speed) {
+
+      var slide = slides[index];
+      var style = slide && slide.style;
+
+      if (!style) return;
+
+      style.webkitTransitionDuration =
+      style.MozTransitionDuration =
+      style.msTransitionDuration =
+      style.OTransitionDuration =
+      style.transitionDuration = speed + 'ms';
+
+      style.webkitTransform = 'translate(' + dist + 'px,0)' + 'translateZ(0)';
+      style.msTransform =
+      style.MozTransform =
+      style.OTransform = 'translateX(' + dist + 'px)';
+
+    }
+
+    function animate(from, to, speed) {
+
+      // if not an animation, just reposition
+      if (!speed) {
+
+        element.style.left = to + 'px';
+        return;
+
+      }
+
+      var start = +new Date();
+
+      var timer = setInterval(function() {
+
+        var timeElap = +new Date() - start;
+
+        if (timeElap > speed) {
+
+          element.style.left = to + 'px';
+
+          if (delay) begin();
+
+          options.transitionEnd && options.transitionEnd.call(event, index, slides[index]);
+
+          clearInterval(timer);
+          return;
+
+        }
+
+        element.style.left = (( (to - from) * (Math.floor((timeElap / speed) * 100) / 100) ) + from) + 'px';
+
+      }, 4);
+
+    }
+
+    // setup auto slideshow
+    var delay = options.auto || 0;
+    var interval;
+
+    function begin() {
+      clearTimeout(interval);
+      interval = setTimeout(next, delay);
+
+    }
+
+    function stop() {
+
+      delay = 0;
+      clearTimeout(interval);
+
+    }
+
+
+    // setup initial vars
+    var start = {};
+    var delta = {};
+    var isScrolling;
+
+    // setup event capturing
+    var events = {
+
+      handleEvent: function(event) {
+
+        switch (event.type) {
+          case 'touchstart': this.start(event); break;
+          case 'touchmove': this.move(event); break;
+          case 'touchend': offloadFn(this.end(event)); break;
+          case 'webkitTransitionEnd':
+          case 'msTransitionEnd':
+          case 'oTransitionEnd':
+          case 'otransitionend':
+          case 'transitionend': offloadFn(this.transitionEnd(event)); break;
+          case 'resize': offloadFn(setup); break;
+        }
+
+        if (options.stopPropagation) event.stopPropagation();
+
+      },
+      start: function(event) {
+
+        var touches = event.touches[0];
+
+        // measure start values
+        start = {
+
+          // get initial touch coords
+          x: touches.pageX,
+          y: touches.pageY,
+
+          // store time to determine touch duration
+          time: +new Date()
+
+        };
+
+        // used for testing first move event
+        isScrolling = undefined;
+
+        // reset delta and end measurements
+        delta = {};
+
+        // attach touchmove and touchend listeners
+        element.addEventListener('touchmove', this, false);
+        element.addEventListener('touchend', this, false);
+
+      },
+      move: function(event) {
+
+        // ensure swiping with one touch and not pinching
+        if ( event.touches.length > 1 || event.scale && event.scale !== 1) return;
+
+        if (options.disableScroll) return;
+
+        var touches = event.touches[0];
+
+        // measure change in x and y
+        delta = {
+          x: touches.pageX - start.x,
+          y: touches.pageY - start.y
+        };
+
+        // determine if scrolling test has run - one time test
+        if ( typeof isScrolling == 'undefined') {
+          isScrolling = !!( isScrolling || Math.abs(delta.x) < Math.abs(delta.y) );
+        }
+
+        // if user is not trying to scroll vertically
+        if (!isScrolling) {
+
+          // prevent native scrolling
+          event.preventDefault();
+
+          // stop slideshow
+          stop();
+
+          // increase resistance if first or last slide
+          if (continuous) { // we don't add resistance at the end
+
+            translate(circle(index-1), delta.x + slidePos[circle(index-1)], 0);
+            translate(index, delta.x + slidePos[index], 0);
+            translate(circle(index+1), delta.x + slidePos[circle(index+1)], 0);
+
+          } else {
+
+            delta.x =
+              delta.x /
+                ( (!index && delta.x > 0 ||         // if first slide and sliding left
+                  index == slides.length - 1 &&     // or if last slide and sliding right
+                  delta.x < 0                       // and if sliding at all
+                ) ?
+                ( Math.abs(delta.x) / width + 1 )      // determine resistance level
+                : 1 );                                 // no resistance if false
+
+            // translate 1:1
+            translate(index-1, delta.x + slidePos[index-1], 0);
+            translate(index, delta.x + slidePos[index], 0);
+            translate(index+1, delta.x + slidePos[index+1], 0);
+          }
+          options.swiping && options.swiping(-delta.x / width);
+
+        }
+
+      },
+      end: function(event) {
+
+        // measure duration
+        var duration = +new Date() - start.time;
+
+        // determine if slide attempt triggers next/prev slide
+        var isValidSlide =
+              Number(duration) < 250 &&         // if slide duration is less than 250ms
+              Math.abs(delta.x) > 20 ||         // and if slide amt is greater than 20px
+              Math.abs(delta.x) > width/2;      // or if slide amt is greater than half the width
+
+        // determine if slide attempt is past start and end
+        var isPastBounds =
+              !index && delta.x > 0 ||                      // if first slide and slide amt is greater than 0
+              index == slides.length - 1 && delta.x < 0;    // or if last slide and slide amt is less than 0
+
+        if (continuous) isPastBounds = false;
+
+        // determine direction of swipe (true:right, false:left)
+        var direction = delta.x < 0;
+
+        // if not scrolling vertically
+        if (!isScrolling) {
+
+          if (isValidSlide && !isPastBounds) {
+
+            if (direction) {
+
+              if (continuous) { // we need to get the next in this direction in place
+
+                move(circle(index-1), -width, 0);
+                move(circle(index+2), width, 0);
+
+              } else {
+                move(index-1, -width, 0);
+              }
+
+              move(index, slidePos[index]-width, speed);
+              move(circle(index+1), slidePos[circle(index+1)]-width, speed);
+              index = circle(index+1);
+
+            } else {
+              if (continuous) { // we need to get the next in this direction in place
+
+                move(circle(index+1), width, 0);
+                move(circle(index-2), -width, 0);
+
+              } else {
+                move(index+1, width, 0);
+              }
+
+              move(index, slidePos[index]+width, speed);
+              move(circle(index-1), slidePos[circle(index-1)]+width, speed);
+              index = circle(index-1);
+
+            }
+
+            options.callback && options.callback(index, slides[index]);
+
+          } else {
+
+            if (continuous) {
+
+              move(circle(index-1), -width, speed);
+              move(index, 0, speed);
+              move(circle(index+1), width, speed);
+
+            } else {
+
+              move(index-1, -width, speed);
+              move(index, 0, speed);
+              move(index+1, width, speed);
+            }
+
+          }
+
+        }
+
+        // kill touchmove and touchend event listeners until touchstart called again
+        element.removeEventListener('touchmove', events, false);
+        element.removeEventListener('touchend', events, false);
+        element.removeEventListener('touchforcechange', function() {}, false);
+
+      },
+      transitionEnd: function(event) {
+
+        if (parseInt(event.target.getAttribute('data-index'), 10) == index) {
+
+          if (delay) begin();
+
+          options.transitionEnd && options.transitionEnd.call(event, index, slides[index]);
+
+        }
+
+      }
+
+    };
+
+    // trigger setup
+    setup();
+
+    // start auto slideshow if applicable
+    if (delay) begin();
+
+
+    // add event listeners
+    if (browser.addEventListener) {
+
+      // set touchstart event on element
+      if (browser.touch) {
+        element.addEventListener('touchstart', events, false);
+        element.addEventListener('touchforcechange', function() {}, false);
+      }
+
+      if (browser.transitions) {
+        element.addEventListener('webkitTransitionEnd', events, false);
+        element.addEventListener('msTransitionEnd', events, false);
+        element.addEventListener('oTransitionEnd', events, false);
+        element.addEventListener('otransitionend', events, false);
+        element.addEventListener('transitionend', events, false);
+      }
+
+      // set resize event on window
+      window.addEventListener('resize', events, false);
+
+    } else {
+
+      window.onresize = function () { setup(); }; // to play nice with old IE
+
+    }
+
+    // expose the Swipe API
+    return {
+      setup: function() {
+
+        setup();
+
+      },
+      slide: function(to, speed) {
+
+        // cancel slideshow
+        stop();
+
+        slide(to, speed);
+
+      },
+      prev: function() {
+
+        // cancel slideshow
+        stop();
+
+        prev();
+
+      },
+      next: function() {
+
+        // cancel slideshow
+        stop();
+
+        next();
+
+      },
+      stop: function() {
+
+        // cancel slideshow
+        stop();
+
+      },
+      getPos: function() {
+
+        // return current index position
+        return index;
+
+      },
+      getNumSlides: function() {
+
+        // return total number of slides
+        return length;
+      },
+      kill: function() {
+
+        // cancel slideshow
+        stop();
+
+        // reset element
+        element.style.width = '';
+        element.style.left = '';
+
+        // reset slides
+        var pos = slides.length;
+        while(pos--) {
+
+          var slide = slides[pos];
+          slide.style.width = '';
+          slide.style.left = '';
+
+          if (browser.transitions) translate(pos, 0, 0);
+        }
+
+        // removed event listeners
+        if (browser.addEventListener) {
+
+          // remove current event listeners
+          element.removeEventListener('touchstart', events, false);
+          element.removeEventListener('webkitTransitionEnd', events, false);
+          element.removeEventListener('msTransitionEnd', events, false);
+          element.removeEventListener('oTransitionEnd', events, false);
+          element.removeEventListener('otransitionend', events, false);
+          element.removeEventListener('transitionend', events, false);
+          window.removeEventListener('resize', events, false);
+
+        } else {
+          window.onresize = null;
+        }
+      }
+    };
+  };
+}));
 
 
 /***/ })

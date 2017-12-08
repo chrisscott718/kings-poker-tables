@@ -37,19 +37,19 @@ header {
   animation-delay: 0.25s;
   flex-direction: column;
   button {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 }
-.header--bottom {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-  font-weight: 100;
-  .lnr {
-    margin-left: 0.5rem;
+
+@keyframes reveal {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(100%);
+    opacity: 1;
   }
 }
 
@@ -70,19 +70,35 @@ header {
       padding: 5rem 0;
     }
   }
-  .header--cta {
-    flex-direction: row;
-    align-items: center;
-    button {
-      margin-top: 0;
-      margin-left: 1rem;
+  .header--bottom {
+    position: absolute;
+    left: 15px;
+    bottom: -50px;
+    border-right: solid 2px $primary-dark;
+    height: 120px;
+    animation-name: reveal;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-direction: normal;
+    animation-delay: 0.3s;
+    opacity: 0;
+    .arrow-down {
+      width: 10px;
+      height: 10px;
+      display: block;
+      border-left: solid 2px $primary-dark;
+      border-bottom: solid 2px $primary-dark;
+      position: absolute;
+      transform: rotate(-45deg);
+      bottom: 0;
+      left: -5px;
     }
   }
 }
 @media (min-width: 992px) {
   header {
     .jumbotron {
-      min-height: 70vh;
+      min-height: 80vh;
       padding: 0;
       justify-content: center;
       h1 {
