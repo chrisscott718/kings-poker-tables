@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ReactSwipe from 'react-swipe';
 
+import {OptionControls} from 'OptionControls';
+
 export default class TBChiprack extends Component {
   constructor(props) {
     super(props);
@@ -42,10 +44,7 @@ export default class TBChiprack extends Component {
               <label className="option-label" htmlFor="flatChiprack">Flat </label>
             </div>
           </ReactSwipe>
-          <div className="option-controls">
-            <button className="option--btn" type="button" onClick={this.prev}>Prev</button>
-            <button className="option--btn" type="button" onClick={this.next}>Next</button>
-          </div>
+          <OptionControls next={this.next} prev={this.prev} />
         </div>
     )
   }

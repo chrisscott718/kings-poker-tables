@@ -30452,7 +30452,7 @@ exports = module.exports = __webpack_require__(54)(undefined);
 
 
 // module
-exports.push([module.i, ".h--light {\n  font-weight: 200; }\n\n.text-secondary {\n  opacity: 0.7; }\n\nh1.display-1 {\n  font-size: 3rem; }\n\n.btn {\n  border: none;\n  background: #21201f;\n  color: white;\n  font-weight: bold;\n  padding: 0 1.5rem;\n  line-height: 4;\n  font-size: 16px;\n  cursor: pointer;\n  border-radius: 3px;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n  font-size: 14px;\n  text-transform: uppercase;\n  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);\n          box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2); }\n\n.btn-default:hover {\n  background: #3b3a38;\n  color: white;\n  -webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.1);\n          box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.1);\n  -webkit-transform: translateY(-1px);\n          transform: translateY(-1px); }\n\n.btn-default:active {\n  -webkit-transform: translateY(1px);\n          transform: translateY(1px);\n  background: #070706;\n  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);\n          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }\n\n:root {\n  font-size: 16px; }\n\nbody {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif;\n  font-size: 1rem;\n  font-weight: normal;\n  line-height: 1.5;\n  color: #21201f;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background: #ffffff;\n  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eeeeee));\n  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 ); }\n\nh1, h2, h3, h4, h5, h6 {\n  margin: 0; }\n\n.container {\n  margin: 0 auto;\n  padding: 0 1rem;\n  position: relative; }\n\n.section-heading {\n  text-align: center; }\n\n.main-section {\n  padding: 4rem; }\n\n@media (min-width: 576px) {\n  .container {\n    max-width: 540px; } }\n\n@media (min-width: 768px) {\n  .container {\n    max-width: 720px; } }\n\n@media (min-width: 992px) {\n  .container {\n    max-width: 960px; } }\n\n@media (min-width: 1200px) {\n  .container {\n    max-width: 1140px; } }\n", ""]);
+exports.push([module.i, ".h--light {\n  font-weight: 200; }\n\n.text-secondary {\n  opacity: 0.7; }\n\nh1.display-1 {\n  font-size: 3rem; }\n\n.btn {\n  border: none;\n  background: #21201f;\n  color: white;\n  font-weight: bold;\n  padding: 0 1.5rem;\n  line-height: 4;\n  font-size: 16px;\n  cursor: pointer;\n  border-radius: 3px;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n  font-size: 14px;\n  text-transform: uppercase;\n  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);\n          box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2); }\n\n.btn:disabled, .btn:disabled:hover {\n    -webkit-box-shadow: none;\n            box-shadow: none;\n    background: #565350;\n    -webkit-transform: none;\n            transform: none;\n    cursor: not-allowed; }\n\n.btn-default:hover {\n  background: #3b3a38;\n  color: white;\n  -webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.1);\n          box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.1);\n  -webkit-transform: translateY(-1px);\n          transform: translateY(-1px); }\n\n.btn-default:active {\n  -webkit-transform: translateY(1px);\n          transform: translateY(1px);\n  background: #070706;\n  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);\n          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }\n\n:root {\n  font-size: 16px; }\n\nbody {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif;\n  font-size: 1rem;\n  font-weight: normal;\n  line-height: 1.5;\n  color: #21201f;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background: #ffffff;\n  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eeeeee));\n  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 ); }\n\nh1, h2, h3, h4, h5, h6 {\n  margin: 0; }\n\n.container {\n  margin: 0 auto;\n  padding: 0 1rem;\n  position: relative; }\n\n.section-heading {\n  text-align: center; }\n\n.main-section {\n  padding: 4rem; }\n\n@media (min-width: 576px) {\n  .container {\n    max-width: 540px; } }\n\n@media (min-width: 768px) {\n  .container {\n    max-width: 720px; } }\n\n@media (min-width: 992px) {\n  .container {\n    max-width: 960px; } }\n\n@media (min-width: 1200px) {\n  .container {\n    max-width: 1140px; } }\n", ""]);
 
 // exports
 
@@ -30649,7 +30649,11 @@ var TableBuilder = function (_Component) {
         _react2.default.createElement(
           'div',
           { id: 'stepIndicator' },
-          'steps for the build your own section go here'
+          _react2.default.createElement(
+            'span',
+            null,
+            this.state.step
+          )
         ),
         _react2.default.createElement(
           'form',
@@ -30659,22 +30663,26 @@ var TableBuilder = function (_Component) {
           _react2.default.createElement(
             'div',
             { id: 'currentFieldset' },
-            this.renderStep()
+            _react2.default.createElement(
+              'div',
+              { className: 'fieldset-wrapper' },
+              this.renderStep()
+            )
           ),
           _react2.default.createElement(
             'div',
             { id: 'mainControls' },
-            _react2.default.createElement(
+            this.state.step < 10 && _react2.default.createElement(
               'button',
-              { type: 'button', disabled: this.state.step === 1, onClick: this.prev },
+              { className: 'btn btn-default', type: 'button', disabled: this.state.step === 1, onClick: this.prev },
               'Prev'
             ),
-            _react2.default.createElement(
+            this.state.step < 9 && _react2.default.createElement(
               'button',
-              { type: 'button', onClick: this.next },
+              { className: 'btn btn-default', type: 'button', onClick: this.next },
               'Next'
             ),
-            _react2.default.createElement('input', { type: 'submit', onClick: function onClick() {
+            this.state.step == 9 && _react2.default.createElement('input', { className: 'btn btn-default', type: 'submit', onClick: function onClick() {
                 console.log('form submit button clicked');
               }, value: 'Request Quote' })
           )
@@ -30728,7 +30736,7 @@ exports = module.exports = __webpack_require__(54)(undefined);
 
 
 // module
-exports.push([module.i, "#tableBuilder {\n  padding: 2rem 0; }\n", ""]);
+exports.push([module.i, "#tableBuilder {\n  margin-top: 2rem; }\n\n#currentFieldset {\n  width: 100%;\n  text-align: center; }\n\n#mainControls {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  position: relative;\n  margin-top: 1rem;\n  padding-top: 1rem; }\n\n#mainControls:before {\n    content: '';\n    display: block;\n    width: 50px;\n    height: 2px;\n    position: absolute;\n    top: 0;\n    left: 50%;\n    margin-left: -25px;\n    background: #21201f; }\n\n#mainControls button {\n    margin: 0 0.5rem;\n    min-width: 150px; }\n\n.fieldset-wrapper {\n  position: relative; }\n\n.option-controls {\n  position: absolute;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 100%;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between; }\n\n.option-controls .option--btn {\n    background: none;\n    border: none;\n    color: #21201f;\n    font-size: 2rem;\n    cursor: pointer;\n    opacity: 0.6;\n    padding: 0.5rem;\n    -webkit-transition: all 0.2s ease-in-out;\n    transition: all 0.2s ease-in-out; }\n\n.option-controls .option--btn:hover {\n      -webkit-transform: translateY(-1px);\n              transform: translateY(-1px);\n      opacity: 1; }\n\n.option-controls .option--btn:active {\n      -webkit-transform: translateY(1px);\n              transform: translateY(1px); }\n\n.option-selector {\n  position: relative; }\n\n.option input[type=radio] {\n  visibility: hidden;\n  width: 0;\n  height: 0;\n  overflow: hidden;\n  position: absolute; }\n\n.option .option-label {\n  text-align: center;\n  font-weight: bold;\n  letter-spacing: 1px;\n  text-transform: uppercase; }\n\n.option .option-label img {\n    display: block;\n    margin: 0 auto;\n    max-width: 300px;\n    margin-bottom: 0.5rem; }\n", ""]);
 
 // exports
 
@@ -31496,6 +31504,8 @@ var _reactSwipe = __webpack_require__(386);
 
 var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
 
+var _OptionControls = __webpack_require__(398);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -31613,20 +31623,7 @@ var TBShape = function (_Component) {
             )
           )
         ),
-        _react2.default.createElement(
-          'div',
-          { className: 'option-controls' },
-          _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.prev },
-            'Prev'
-          ),
-          _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.next },
-            'Next'
-          )
-        )
+        _react2.default.createElement(_OptionControls.OptionControls, { next: this.next, prev: this.prev })
       );
     }
   }]);
@@ -31656,6 +31653,8 @@ var _react2 = _interopRequireDefault(_react);
 var _reactSwipe = __webpack_require__(386);
 
 var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+var _OptionControls = __webpack_require__(398);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31758,20 +31757,7 @@ var TBPedestal = function (_Component) {
             )
           )
         ),
-        _react2.default.createElement(
-          'div',
-          { className: 'option-controls' },
-          _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.prev },
-            'Prev'
-          ),
-          _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.next },
-            'Next'
-          )
-        )
+        _react2.default.createElement(_OptionControls.OptionControls, { next: this.next, prev: this.prev })
       );
     }
   }]);
@@ -31801,6 +31787,8 @@ var _react2 = _interopRequireDefault(_react);
 var _reactSwipe = __webpack_require__(386);
 
 var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+var _OptionControls = __webpack_require__(398);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31885,20 +31873,7 @@ var TBArmrest = function (_Component) {
             )
           )
         ),
-        _react2.default.createElement(
-          'div',
-          { className: 'option-controls' },
-          _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.prev },
-            'Prev'
-          ),
-          _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.next },
-            'Next'
-          )
-        )
+        _react2.default.createElement(_OptionControls.OptionControls, { next: this.next, prev: this.prev })
       );
     }
   }]);
@@ -31943,28 +31918,12 @@ var TBFabric = function (_Component) {
   function TBFabric(props) {
     _classCallCheck(this, TBFabric);
 
-    var _this = _possibleConstructorReturn(this, (TBFabric.__proto__ || Object.getPrototypeOf(TBFabric)).call(this, props));
-
-    _this.next = _this.next.bind(_this);
-    _this.prev = _this.prev.bind(_this);
-    return _this;
+    return _possibleConstructorReturn(this, (TBFabric.__proto__ || Object.getPrototypeOf(TBFabric)).call(this, props));
   }
 
   _createClass(TBFabric, [{
-    key: 'next',
-    value: function next() {
-      this.reactSwipe.next();
-    }
-  }, {
-    key: 'prev',
-    value: function prev() {
-      this.reactSwipe.prev();
-    }
-  }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
       var _props = this.props,
           fabricColor = _props.fabricColor,
           handleInputChange = _props.handleInputChange;
@@ -31973,125 +31932,105 @@ var TBFabric = function (_Component) {
         'div',
         { className: 'option-selector' },
         _react2.default.createElement(
-          _reactSwipe2.default,
-          { ref: function ref(reactSwipe) {
-              return _this2.reactSwipe = reactSwipe;
-            }, className: 'carousel', swipeOptions: { continuous: false } },
+          'div',
+          { className: 'option' },
+          _react2.default.createElement('input', {
+            type: 'radio',
+            name: 'fabricColor',
+            id: 'fcBlack',
+            value: 'blackFabric',
+            checked: fabricColor === 'blackFabric',
+            onChange: handleInputChange }),
           _react2.default.createElement(
-            'div',
-            { className: 'option' },
-            _react2.default.createElement('input', {
-              type: 'radio',
-              name: 'fabricColor',
-              id: 'fcBlack',
-              value: 'blackFabric',
-              checked: fabricColor === 'blackFabric',
-              onChange: handleInputChange }),
-            _react2.default.createElement(
-              'label',
-              { className: 'option-label', htmlFor: 'fcBlack' },
-              _react2.default.createElement('img', { src: './images/buildyourown/fabric-black.png' }),
-              'Black'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'option' },
-            _react2.default.createElement('input', {
-              type: 'radio',
-              name: 'fabricColor',
-              id: 'fcBurgundy',
-              value: 'burgundyFabric',
-              checked: fabricColor === 'burgundyFabric',
-              onChange: handleInputChange }),
-            _react2.default.createElement(
-              'label',
-              { className: 'option-label', htmlFor: 'fcBurgundy' },
-              _react2.default.createElement('img', { src: './images/buildyourown/fabric-burgundy.png' }),
-              'Burgundy'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'option' },
-            _react2.default.createElement('input', {
-              type: 'radio',
-              name: 'fabricColor',
-              id: 'fcBrown',
-              value: 'brownFabric',
-              checked: fabricColor === 'brownFabric',
-              onChange: handleInputChange }),
-            _react2.default.createElement(
-              'label',
-              { className: 'option-label', htmlFor: 'fcBrown' },
-              _react2.default.createElement('img', { src: './images/buildyourown/fabric-brown.png' }),
-              'Brown'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'option' },
-            _react2.default.createElement('input', {
-              type: 'radio',
-              name: 'fabricColor',
-              id: 'fcGreen',
-              value: 'greenFabric',
-              checked: fabricColor === 'greenFabric',
-              onChange: handleInputChange }),
-            _react2.default.createElement(
-              'label',
-              { className: 'option-label', htmlFor: 'fcGreen' },
-              _react2.default.createElement('img', { src: './images/buildyourown/fabric-green.png' }),
-              'Green'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'option' },
-            _react2.default.createElement('input', {
-              type: 'radio',
-              name: 'fabricColor',
-              id: 'fcBlue',
-              value: 'blueFabric',
-              checked: fabricColor === 'blueFabric',
-              onChange: handleInputChange }),
-            _react2.default.createElement(
-              'label',
-              { className: 'option-label', htmlFor: 'fcBlue' },
-              _react2.default.createElement('img', { src: './images/buildyourown/fabric-blue.png' }),
-              'Blue'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'option' },
-            _react2.default.createElement('input', {
-              type: 'radio',
-              name: 'fabricColor',
-              id: 'fcCustom',
-              value: 'customFabric',
-              checked: fabricColor === 'customFabric',
-              onChange: handleInputChange }),
-            _react2.default.createElement(
-              'label',
-              { className: 'option-label', htmlFor: 'fcCustom' },
-              _react2.default.createElement('img', { src: './images/buildyourown/fabric-custom.png' }),
-              'Custom'
-            )
+            'label',
+            { className: 'option-label', htmlFor: 'fcBlack' },
+            _react2.default.createElement('img', { src: './images/buildyourown/fabric-black.png' }),
+            'Black'
           )
         ),
         _react2.default.createElement(
           'div',
-          { className: 'option-controls' },
+          { className: 'option' },
+          _react2.default.createElement('input', {
+            type: 'radio',
+            name: 'fabricColor',
+            id: 'fcBurgundy',
+            value: 'burgundyFabric',
+            checked: fabricColor === 'burgundyFabric',
+            onChange: handleInputChange }),
           _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.prev },
-            'Prev'
-          ),
+            'label',
+            { className: 'option-label', htmlFor: 'fcBurgundy' },
+            _react2.default.createElement('img', { src: './images/buildyourown/fabric-burgundy.png' }),
+            'Burgundy'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'option' },
+          _react2.default.createElement('input', {
+            type: 'radio',
+            name: 'fabricColor',
+            id: 'fcBrown',
+            value: 'brownFabric',
+            checked: fabricColor === 'brownFabric',
+            onChange: handleInputChange }),
           _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.next },
-            'Next'
+            'label',
+            { className: 'option-label', htmlFor: 'fcBrown' },
+            _react2.default.createElement('img', { src: './images/buildyourown/fabric-brown.png' }),
+            'Brown'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'option' },
+          _react2.default.createElement('input', {
+            type: 'radio',
+            name: 'fabricColor',
+            id: 'fcGreen',
+            value: 'greenFabric',
+            checked: fabricColor === 'greenFabric',
+            onChange: handleInputChange }),
+          _react2.default.createElement(
+            'label',
+            { className: 'option-label', htmlFor: 'fcGreen' },
+            _react2.default.createElement('img', { src: './images/buildyourown/fabric-green.png' }),
+            'Green'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'option' },
+          _react2.default.createElement('input', {
+            type: 'radio',
+            name: 'fabricColor',
+            id: 'fcBlue',
+            value: 'blueFabric',
+            checked: fabricColor === 'blueFabric',
+            onChange: handleInputChange }),
+          _react2.default.createElement(
+            'label',
+            { className: 'option-label', htmlFor: 'fcBlue' },
+            _react2.default.createElement('img', { src: './images/buildyourown/fabric-blue.png' }),
+            'Blue'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'option' },
+          _react2.default.createElement('input', {
+            type: 'radio',
+            name: 'fabricColor',
+            id: 'fcCustom',
+            value: 'customFabric',
+            checked: fabricColor === 'customFabric',
+            onChange: handleInputChange }),
+          _react2.default.createElement(
+            'label',
+            { className: 'option-label', htmlFor: 'fcCustom' },
+            _react2.default.createElement('img', { src: './images/buildyourown/fabric-custom.png' }),
+            'Custom'
           )
         )
       );
@@ -32123,6 +32062,8 @@ var _react2 = _interopRequireDefault(_react);
 var _reactSwipe = __webpack_require__(386);
 
 var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+var _OptionControls = __webpack_require__(398);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32205,20 +32146,7 @@ var TBChiprack = function (_Component) {
             )
           )
         ),
-        _react2.default.createElement(
-          'div',
-          { className: 'option-controls' },
-          _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.prev },
-            'Prev'
-          ),
-          _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.next },
-            'Next'
-          )
-        )
+        _react2.default.createElement(_OptionControls.OptionControls, { next: this.next, prev: this.prev })
       );
     }
   }]);
@@ -32248,6 +32176,8 @@ var _react2 = _interopRequireDefault(_react);
 var _reactSwipe = __webpack_require__(386);
 
 var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+var _OptionControls = __webpack_require__(398);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32346,20 +32276,7 @@ var TBWoodtype = function (_Component) {
             )
           )
         ),
-        _react2.default.createElement(
-          'div',
-          { className: 'option-controls' },
-          _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.prev },
-            'Prev'
-          ),
-          _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.next },
-            'Next'
-          )
-        )
+        _react2.default.createElement(_OptionControls.OptionControls, { next: this.next, prev: this.prev })
       );
     }
   }]);
@@ -32404,28 +32321,12 @@ var TBCuptype = function (_Component) {
   function TBCuptype(props) {
     _classCallCheck(this, TBCuptype);
 
-    var _this = _possibleConstructorReturn(this, (TBCuptype.__proto__ || Object.getPrototypeOf(TBCuptype)).call(this, props));
-
-    _this.next = _this.next.bind(_this);
-    _this.prev = _this.prev.bind(_this);
-    return _this;
+    return _possibleConstructorReturn(this, (TBCuptype.__proto__ || Object.getPrototypeOf(TBCuptype)).call(this, props));
   }
 
   _createClass(TBCuptype, [{
-    key: 'next',
-    value: function next() {
-      this.reactSwipe.next();
-    }
-  }, {
-    key: 'prev',
-    value: function prev() {
-      this.reactSwipe.prev();
-    }
-  }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
       var _props = this.props,
           cupType = _props.cupType,
           handleInputChange = _props.handleInputChange;
@@ -32434,55 +32335,35 @@ var TBCuptype = function (_Component) {
         'div',
         { className: 'option-selector' },
         _react2.default.createElement(
-          _reactSwipe2.default,
-          { ref: function ref(reactSwipe) {
-              return _this2.reactSwipe = reactSwipe;
-            }, className: 'carousel', swipeOptions: { continuous: false } },
+          'div',
+          { className: 'option' },
+          _react2.default.createElement('input', {
+            type: 'radio',
+            name: 'cupType',
+            id: 'steelCups',
+            value: 'steelCups',
+            checked: cupType === 'steelCups',
+            onChange: handleInputChange }),
           _react2.default.createElement(
-            'div',
-            { className: 'option' },
-            _react2.default.createElement('input', {
-              type: 'radio',
-              name: 'cupType',
-              id: 'steelCups',
-              value: 'steelCups',
-              checked: cupType === 'steelCups',
-              onChange: handleInputChange }),
-            _react2.default.createElement(
-              'label',
-              { className: 'option-label', htmlFor: 'steelCups' },
-              'Stainless Steel'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'option' },
-            _react2.default.createElement('input', {
-              type: 'radio',
-              name: 'cupType',
-              id: 'brassCups',
-              value: 'brassCups',
-              checked: cupType === 'brassCups',
-              onChange: handleInputChange }),
-            _react2.default.createElement(
-              'label',
-              { className: 'option-label', htmlFor: 'brassCups' },
-              'Brass'
-            )
+            'label',
+            { className: 'option-label', htmlFor: 'steelCups' },
+            'Stainless Steel'
           )
         ),
         _react2.default.createElement(
           'div',
-          { className: 'option-controls' },
+          { className: 'option' },
+          _react2.default.createElement('input', {
+            type: 'radio',
+            name: 'cupType',
+            id: 'brassCups',
+            value: 'brassCups',
+            checked: cupType === 'brassCups',
+            onChange: handleInputChange }),
           _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.prev },
-            'Prev'
-          ),
-          _react2.default.createElement(
-            'button',
-            { className: 'option--btn', type: 'button', onClick: this.next },
-            'Next'
+            'label',
+            { className: 'option-label', htmlFor: 'brassCups' },
+            'Brass'
           )
         )
       );
@@ -32698,6 +32579,44 @@ var TBDiningtop = function (_Component) {
 }(_react.Component);
 
 exports.default = TBDiningtop;
+
+/***/ }),
+/* 398 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.OptionControls = undefined;
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var OptionControls = exports.OptionControls = function OptionControls(_ref) {
+  var prev = _ref.prev,
+      next = _ref.next;
+
+  return _react2.default.createElement(
+    "div",
+    { className: "option-controls" },
+    _react2.default.createElement(
+      "button",
+      { className: "option--btn", type: "button", onClick: prev },
+      _react2.default.createElement("span", { className: "lnr lnr-chevron-left-circle" })
+    ),
+    _react2.default.createElement(
+      "button",
+      { className: "option--btn", type: "button", onClick: next },
+      _react2.default.createElement("span", { className: "lnr lnr-chevron-right-circle" })
+    )
+  );
+};
 
 /***/ })
 /******/ ]);

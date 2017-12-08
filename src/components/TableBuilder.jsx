@@ -125,16 +125,25 @@ export default class TableBuilder extends Component {
     return (
       <section id="tableBuilder">
         <div id="stepIndicator">
-          steps for the build your own section go here
+          <span>{this.state.step}</span>
         </div>
         <form onSubmit={() => {console.log('form submitted')}}>
           <div id="currentFieldset">
+            <div className="fieldset-wrapper">
               {this.renderStep()}
+            </div>
           </div>
           <div id="mainControls">
-            <button type="button" disabled={this.state.step === 1} onClick={this.prev}>Prev</button>
-            <button type="button" onClick={this.next}>Next</button>
-            <input type="submit" onClick={() => {console.log('form submit button clicked')}} value="Request Quote" />
+            {this.state.step < 10 &&
+              <button className="btn btn-default" type="button" disabled={this.state.step === 1} onClick={this.prev}>Prev</button>
+            }
+            {this.state.step < 9 &&
+              <button className="btn btn-default" type="button" onClick={this.next}>Next</button>
+            }
+            {
+              this.state.step == 9 &&
+              <input className="btn btn-default" type="submit" onClick={() => {console.log('form submit button clicked')}} value="Request Quote" />
+            }
           </div>
         </form>
       </section>

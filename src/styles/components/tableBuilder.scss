@@ -1,7 +1,89 @@
+@import "./../variables.scss";
+
 #tableBuilder {
-  padding: 2rem 0;
+  margin-top: 2rem;
+}
+#currentFieldset {
+  width: 100%;
+  text-align: center;
+}
+#mainControls {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  &:before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -25px;
+    background: $primary-dark;
+  }
+  button {
+    margin: 0 0.5rem;
+    min-width: 150px;
+  }
+}
+
+.fieldset-wrapper {
+  position: relative;
+}
+
+.option-controls {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  .option--btn {
+    background: none;
+    border: none;
+    color: $primary-dark;
+    font-size: 2rem;
+    cursor: pointer;
+    opacity: 0.6;
+    padding: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: translateY(-1px);
+      opacity: 1;
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+  }
 }
 
 .option-selector {
+  position: relative;
+}
 
+.option {
+  input[type=radio] {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+  .option-label {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 300px;
+      margin-bottom: 0.5rem;
+    }
+  }
 }
