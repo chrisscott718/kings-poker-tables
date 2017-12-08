@@ -30407,7 +30407,7 @@ exports = module.exports = __webpack_require__(54)(undefined);
 
 
 // module
-exports.push([module.i, "#build-your-own-table {\n  min-height: 100vh; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -30468,19 +30468,59 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(22);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactSwipe = __webpack_require__(386);
+var _TBShape = __webpack_require__(388);
 
-var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+var _TBShape2 = _interopRequireDefault(_TBShape);
+
+var _TBPedestal = __webpack_require__(389);
+
+var _TBPedestal2 = _interopRequireDefault(_TBPedestal);
+
+var _TBArmrest = __webpack_require__(390);
+
+var _TBArmrest2 = _interopRequireDefault(_TBArmrest);
+
+var _TBFabric = __webpack_require__(391);
+
+var _TBFabric2 = _interopRequireDefault(_TBFabric);
+
+var _TBChiprack = __webpack_require__(392);
+
+var _TBChiprack2 = _interopRequireDefault(_TBChiprack);
+
+var _TBWoodtype = __webpack_require__(393);
+
+var _TBWoodtype2 = _interopRequireDefault(_TBWoodtype);
+
+var _TBCuptype = __webpack_require__(394);
+
+var _TBCuptype2 = _interopRequireDefault(_TBCuptype);
+
+var _TBForm = __webpack_require__(395);
+
+var _TBForm2 = _interopRequireDefault(_TBForm);
+
+var _TBDiningtop = __webpack_require__(397);
+
+var _TBDiningtop2 = _interopRequireDefault(_TBDiningtop);
+
+var _TBSuccess = __webpack_require__(396);
+
+var _TBSuccess2 = _interopRequireDefault(_TBSuccess);
 
 __webpack_require__(384);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -30502,32 +30542,107 @@ var TableBuilder = function (_Component) {
       armRest: '',
       fabricColor: '',
       chipRack: '',
-      tableWood: '',
-      cups: '',
-      diningTop: false,
-      currentStep: 1
+      woodType: '',
+      cupType: '',
+      diningTop: '',
+      fullName: '',
+      email: '',
+      comments: '',
+      phone: '',
+      step: 1
     };
 
+    _this.handleInputChange = _this.handleInputChange.bind(_this);
+    _this.renderStep = _this.renderStep.bind(_this);
     _this.next = _this.next.bind(_this);
     _this.prev = _this.prev.bind(_this);
     return _this;
   }
 
   _createClass(TableBuilder, [{
+    key: 'handleInputChange',
+    value: function handleInputChange(event) {
+      var target = event.target;
+      var value = event.target.value;
+      var name = event.target.name;
+      this.setState(_defineProperty({}, name, value));
+    }
+  }, {
     key: 'next',
     value: function next() {
-      this.reactSwipe.next();
+      if (this.state.step !== 10) this.setState({ step: this.state.step + 1 });
     }
   }, {
     key: 'prev',
     value: function prev() {
-      this.reactSwipe.prev();
+      if (this.state.step !== 1) this.setState({ step: this.state.step - 1 });
+    }
+  }, {
+    key: 'renderStep',
+    value: function renderStep() {
+      switch (this.state.step) {
+        case 1:
+          return _react2.default.createElement(_TBShape2.default, {
+            tableShape: this.state.tableShape,
+            handleInputChange: this.handleInputChange
+          });
+          break;
+        case 2:
+          return _react2.default.createElement(_TBPedestal2.default, {
+            pedestal: this.state.pedestal,
+            handleInputChange: this.handleInputChange
+          });
+          break;
+        case 3:
+          return _react2.default.createElement(_TBArmrest2.default, {
+            armRest: this.state.armRest,
+            handleInputChange: this.handleInputChange
+          });
+          break;
+        case 4:
+          return _react2.default.createElement(_TBFabric2.default, {
+            fabricColor: this.state.fabricColor,
+            handleInputChange: this.handleInputChange
+          });
+          break;
+        case 5:
+          return _react2.default.createElement(_TBChiprack2.default, {
+            chipRack: this.state.chipRack,
+            handleInputChange: this.handleInputChange
+          });
+          break;
+        case 6:
+          return _react2.default.createElement(_TBWoodtype2.default, {
+            woodType: this.state.woodType,
+            handleInputChange: this.handleInputChange
+          });
+          break;
+        case 7:
+          return _react2.default.createElement(_TBCuptype2.default, {
+            cupType: this.state.cupType,
+            handleInputChange: this.handleInputChange
+          });
+          break;
+        case 8:
+          return _react2.default.createElement(_TBDiningtop2.default, {
+            diningTop: this.state.diningTop,
+            handleInputChange: this.handleInputChange
+          });
+          break;
+        case 9:
+          return _react2.default.createElement(_TBForm2.default, _extends({}, this.state, {
+            handleInputChange: this.handleInputChange
+          }));
+          break;
+        case 10:
+          return _react2.default.createElement(_TBSuccess2.default, null);
+          break;
+        default:
+      }
     }
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
       return _react2.default.createElement(
         'section',
         { id: 'tableBuilder' },
@@ -30537,72 +30652,31 @@ var TableBuilder = function (_Component) {
           'steps for the build your own section go here'
         ),
         _react2.default.createElement(
-          'div',
-          { id: 'optionSelector' },
+          'form',
+          { onSubmit: function onSubmit() {
+              console.log('form submitted');
+            } },
           _react2.default.createElement(
-            _reactSwipe2.default,
-            { ref: function ref(reactSwipe) {
-                return _this2.reactSwipe = reactSwipe;
-              }, className: 'carousel', swipeOptions: { continuous: false } },
-            _react2.default.createElement(
-              'div',
-              null,
-              '1. options selectors go here'
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              '2. options selectors go here'
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              '3. options selectors go here'
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              '4. options selectors go here'
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              '5. options selectors go here'
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              '6. options selectors go here'
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              '7. options selectors go here'
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              '8. options selectors go here'
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              '9. options selectors go here'
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { id: 'mainControls' },
-          _react2.default.createElement(
-            'button',
-            { type: 'button', onClick: this.prev },
-            'Prev'
+            'div',
+            { id: 'currentFieldset' },
+            this.renderStep()
           ),
           _react2.default.createElement(
-            'button',
-            { type: 'button', onClick: this.next },
-            'Next'
+            'div',
+            { id: 'mainControls' },
+            _react2.default.createElement(
+              'button',
+              { type: 'button', disabled: this.state.step === 1, onClick: this.prev },
+              'Prev'
+            ),
+            _react2.default.createElement(
+              'button',
+              { type: 'button', onClick: this.next },
+              'Next'
+            ),
+            _react2.default.createElement('input', { type: 'submit', onClick: function onClick() {
+                console.log('form submit button clicked');
+              }, value: 'Request Quote' })
           )
         )
       );
@@ -30654,7 +30728,7 @@ exports = module.exports = __webpack_require__(54)(undefined);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#tableBuilder {\n  padding: 2rem 0; }\n", ""]);
 
 // exports
 
@@ -31400,6 +31474,1230 @@ module.exports = exports['default'];
   };
 }));
 
+
+/***/ }),
+/* 388 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSwipe = __webpack_require__(386);
+
+var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TBShape = function (_Component) {
+  _inherits(TBShape, _Component);
+
+  function TBShape(props) {
+    _classCallCheck(this, TBShape);
+
+    var _this = _possibleConstructorReturn(this, (TBShape.__proto__ || Object.getPrototypeOf(TBShape)).call(this, props));
+
+    _this.next = _this.next.bind(_this);
+    _this.prev = _this.prev.bind(_this);
+    return _this;
+  }
+
+  _createClass(TBShape, [{
+    key: 'next',
+    value: function next() {
+      this.reactSwipe.next();
+    }
+  }, {
+    key: 'prev',
+    value: function prev() {
+      this.reactSwipe.prev();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          tableShape = _props.tableShape,
+          handleInputChange = _props.handleInputChange;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'option-selector' },
+        _react2.default.createElement(
+          _reactSwipe2.default,
+          { ref: function ref(reactSwipe) {
+              return _this2.reactSwipe = reactSwipe;
+            }, className: 'carousel', swipeOptions: { continuous: true } },
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'tableShape',
+              id: 'round',
+              value: 'round',
+              checked: tableShape === 'round',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'round' },
+              _react2.default.createElement('img', { src: './images/buildyourown/shape-round.png' }),
+              'Round'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'tableShape',
+              id: 'oval',
+              value: 'oval',
+              checked: tableShape === 'oval',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'oval' },
+              _react2.default.createElement('img', { src: './images/buildyourown/shape-oval.png' }),
+              'Oval'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'tableShape',
+              id: 'ellipse',
+              value: 'ellipse',
+              checked: tableShape === 'ellipse',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'ellipse' },
+              _react2.default.createElement('img', { src: './images/buildyourown/shape-ellipse.png' }),
+              'Ellipse'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'tableShape',
+              id: 'octagon',
+              value: 'octagon',
+              checked: tableShape === 'octagon',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'octagon' },
+              _react2.default.createElement('img', { src: './images/buildyourown/shape-octogon.png' }),
+              'Octagon'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'option-controls' },
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.prev },
+            'Prev'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.next },
+            'Next'
+          )
+        )
+      );
+    }
+  }]);
+
+  return TBShape;
+}(_react.Component);
+
+exports.default = TBShape;
+
+/***/ }),
+/* 389 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSwipe = __webpack_require__(386);
+
+var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TBPedestal = function (_Component) {
+  _inherits(TBPedestal, _Component);
+
+  function TBPedestal(props) {
+    _classCallCheck(this, TBPedestal);
+
+    var _this = _possibleConstructorReturn(this, (TBPedestal.__proto__ || Object.getPrototypeOf(TBPedestal)).call(this, props));
+
+    _this.next = _this.next.bind(_this);
+    _this.prev = _this.prev.bind(_this);
+    return _this;
+  }
+
+  _createClass(TBPedestal, [{
+    key: 'next',
+    value: function next() {
+      this.reactSwipe.next();
+    }
+  }, {
+    key: 'prev',
+    value: function prev() {
+      this.reactSwipe.prev();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          pedestal = _props.pedestal,
+          handleInputChange = _props.handleInputChange;
+
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'option-selector' },
+        _react2.default.createElement(
+          _reactSwipe2.default,
+          { ref: function ref(reactSwipe) {
+              return _this2.reactSwipe = reactSwipe;
+            }, className: 'carousel', swipeOptions: { continuous: true } },
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'pedestal',
+              id: 'clawPedestal',
+              value: 'clawPedestal',
+              checked: pedestal === 'clawPedestal',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'clawPedestal' },
+              _react2.default.createElement('img', { src: './images/buildyourown/pedestal-claw.png' }),
+              'Claw'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'pedestal',
+              id: 'reedPedestal',
+              value: 'reedPedestal',
+              checked: pedestal === 'reedPedestal',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'reedPedestal' },
+              _react2.default.createElement('img', { src: './images/buildyourown/pedestal-claw.png' }),
+              'Reed'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'pedestal',
+              id: 'executivePedestal',
+              value: 'executivePedestal',
+              checked: pedestal === 'executivePedestal',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'executivePedestal' },
+              _react2.default.createElement('img', { src: './images/buildyourown/pedestal-claw.png' }),
+              'Executive'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'option-controls' },
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.prev },
+            'Prev'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.next },
+            'Next'
+          )
+        )
+      );
+    }
+  }]);
+
+  return TBPedestal;
+}(_react.Component);
+
+exports.default = TBPedestal;
+
+/***/ }),
+/* 390 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSwipe = __webpack_require__(386);
+
+var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TBArmrest = function (_Component) {
+  _inherits(TBArmrest, _Component);
+
+  function TBArmrest(props) {
+    _classCallCheck(this, TBArmrest);
+
+    var _this = _possibleConstructorReturn(this, (TBArmrest.__proto__ || Object.getPrototypeOf(TBArmrest)).call(this, props));
+
+    _this.next = _this.next.bind(_this);
+    _this.prev = _this.prev.bind(_this);
+    return _this;
+  }
+
+  _createClass(TBArmrest, [{
+    key: 'next',
+    value: function next() {
+      this.reactSwipe.next();
+    }
+  }, {
+    key: 'prev',
+    value: function prev() {
+      this.reactSwipe.prev();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          armRest = _props.armRest,
+          handleInputChange = _props.handleInputChange;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'option-selector' },
+        _react2.default.createElement(
+          _reactSwipe2.default,
+          { ref: function ref(reactSwipe) {
+              return _this2.reactSwipe = reactSwipe;
+            }, className: 'carousel', swipeOptions: { continuous: true } },
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'armRest',
+              id: 'vinylArmrest',
+              value: 'vinyl',
+              checked: armRest === 'vinyl',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'vinylArmrest' },
+              _react2.default.createElement('img', { src: './images/buildyourown/armrest-vinyl.png' }),
+              'Vinyl'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'armRest',
+              id: 'leatherArmrest',
+              value: 'leather',
+              checked: armRest === 'leather',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'leatherArmrest' },
+              _react2.default.createElement('img', { src: './images/buildyourown/armrest-leather.png' }),
+              'Leather'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'option-controls' },
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.prev },
+            'Prev'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.next },
+            'Next'
+          )
+        )
+      );
+    }
+  }]);
+
+  return TBArmrest;
+}(_react.Component);
+
+exports.default = TBArmrest;
+
+/***/ }),
+/* 391 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSwipe = __webpack_require__(386);
+
+var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TBFabric = function (_Component) {
+  _inherits(TBFabric, _Component);
+
+  function TBFabric(props) {
+    _classCallCheck(this, TBFabric);
+
+    var _this = _possibleConstructorReturn(this, (TBFabric.__proto__ || Object.getPrototypeOf(TBFabric)).call(this, props));
+
+    _this.next = _this.next.bind(_this);
+    _this.prev = _this.prev.bind(_this);
+    return _this;
+  }
+
+  _createClass(TBFabric, [{
+    key: 'next',
+    value: function next() {
+      this.reactSwipe.next();
+    }
+  }, {
+    key: 'prev',
+    value: function prev() {
+      this.reactSwipe.prev();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          fabricColor = _props.fabricColor,
+          handleInputChange = _props.handleInputChange;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'option-selector' },
+        _react2.default.createElement(
+          _reactSwipe2.default,
+          { ref: function ref(reactSwipe) {
+              return _this2.reactSwipe = reactSwipe;
+            }, className: 'carousel', swipeOptions: { continuous: false } },
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'fabricColor',
+              id: 'fcBlack',
+              value: 'blackFabric',
+              checked: fabricColor === 'blackFabric',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'fcBlack' },
+              _react2.default.createElement('img', { src: './images/buildyourown/fabric-black.png' }),
+              'Black'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'fabricColor',
+              id: 'fcBurgundy',
+              value: 'burgundyFabric',
+              checked: fabricColor === 'burgundyFabric',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'fcBurgundy' },
+              _react2.default.createElement('img', { src: './images/buildyourown/fabric-burgundy.png' }),
+              'Burgundy'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'fabricColor',
+              id: 'fcBrown',
+              value: 'brownFabric',
+              checked: fabricColor === 'brownFabric',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'fcBrown' },
+              _react2.default.createElement('img', { src: './images/buildyourown/fabric-brown.png' }),
+              'Brown'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'fabricColor',
+              id: 'fcGreen',
+              value: 'greenFabric',
+              checked: fabricColor === 'greenFabric',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'fcGreen' },
+              _react2.default.createElement('img', { src: './images/buildyourown/fabric-green.png' }),
+              'Green'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'fabricColor',
+              id: 'fcBlue',
+              value: 'blueFabric',
+              checked: fabricColor === 'blueFabric',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'fcBlue' },
+              _react2.default.createElement('img', { src: './images/buildyourown/fabric-blue.png' }),
+              'Blue'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'fabricColor',
+              id: 'fcCustom',
+              value: 'customFabric',
+              checked: fabricColor === 'customFabric',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'fcCustom' },
+              _react2.default.createElement('img', { src: './images/buildyourown/fabric-custom.png' }),
+              'Custom'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'option-controls' },
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.prev },
+            'Prev'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.next },
+            'Next'
+          )
+        )
+      );
+    }
+  }]);
+
+  return TBFabric;
+}(_react.Component);
+
+exports.default = TBFabric;
+
+/***/ }),
+/* 392 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSwipe = __webpack_require__(386);
+
+var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TBChiprack = function (_Component) {
+  _inherits(TBChiprack, _Component);
+
+  function TBChiprack(props) {
+    _classCallCheck(this, TBChiprack);
+
+    var _this = _possibleConstructorReturn(this, (TBChiprack.__proto__ || Object.getPrototypeOf(TBChiprack)).call(this, props));
+
+    _this.next = _this.next.bind(_this);
+    _this.prev = _this.prev.bind(_this);
+    return _this;
+  }
+
+  _createClass(TBChiprack, [{
+    key: 'next',
+    value: function next() {
+      this.reactSwipe.next();
+    }
+  }, {
+    key: 'prev',
+    value: function prev() {
+      this.reactSwipe.prev();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          chipRack = _props.chipRack,
+          handleInputChange = _props.handleInputChange;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'option-selector' },
+        _react2.default.createElement(
+          _reactSwipe2.default,
+          { ref: function ref(reactSwipe) {
+              return _this2.reactSwipe = reactSwipe;
+            }, className: 'carousel', swipeOptions: { continuous: false } },
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'chipRack',
+              id: 'groovedChiprack',
+              value: 'groovedChiprack',
+              checked: chipRack === 'groovedChiprack',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'groovedChiprack' },
+              'Grooved '
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'chipRack',
+              id: 'flatChiprack',
+              value: 'flatChiprack',
+              checked: chipRack === 'flatChiprack',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'flatChiprack' },
+              'Flat '
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'option-controls' },
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.prev },
+            'Prev'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.next },
+            'Next'
+          )
+        )
+      );
+    }
+  }]);
+
+  return TBChiprack;
+}(_react.Component);
+
+exports.default = TBChiprack;
+
+/***/ }),
+/* 393 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSwipe = __webpack_require__(386);
+
+var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TBWoodtype = function (_Component) {
+  _inherits(TBWoodtype, _Component);
+
+  function TBWoodtype(props) {
+    _classCallCheck(this, TBWoodtype);
+
+    var _this = _possibleConstructorReturn(this, (TBWoodtype.__proto__ || Object.getPrototypeOf(TBWoodtype)).call(this, props));
+
+    _this.next = _this.next.bind(_this);
+    _this.prev = _this.prev.bind(_this);
+    return _this;
+  }
+
+  _createClass(TBWoodtype, [{
+    key: 'next',
+    value: function next() {
+      this.reactSwipe.next();
+    }
+  }, {
+    key: 'prev',
+    value: function prev() {
+      this.reactSwipe.prev();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          woodType = _props.woodType,
+          handleInputChange = _props.handleInputChange;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'option-selector' },
+        _react2.default.createElement(
+          _reactSwipe2.default,
+          { ref: function ref(reactSwipe) {
+              return _this2.reactSwipe = reactSwipe;
+            }, className: 'carousel', swipeOptions: { continuous: false } },
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'woodType',
+              id: 'wtMahogany',
+              value: 'woodMahogany',
+              checked: woodType === 'woodMahogany',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'wtMahogany' },
+              'Mahogany '
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'woodType',
+              id: 'wtCherry',
+              value: 'woodCherry',
+              checked: woodType === 'woodCherry',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'wtCherry' },
+              'Cherry '
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'woodType',
+              id: 'wtWalnut',
+              value: 'woodWalnut',
+              checked: woodType === 'woodWalnut',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'wtWalnut' },
+              'Walnut '
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'option-controls' },
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.prev },
+            'Prev'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.next },
+            'Next'
+          )
+        )
+      );
+    }
+  }]);
+
+  return TBWoodtype;
+}(_react.Component);
+
+exports.default = TBWoodtype;
+
+/***/ }),
+/* 394 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSwipe = __webpack_require__(386);
+
+var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TBCuptype = function (_Component) {
+  _inherits(TBCuptype, _Component);
+
+  function TBCuptype(props) {
+    _classCallCheck(this, TBCuptype);
+
+    var _this = _possibleConstructorReturn(this, (TBCuptype.__proto__ || Object.getPrototypeOf(TBCuptype)).call(this, props));
+
+    _this.next = _this.next.bind(_this);
+    _this.prev = _this.prev.bind(_this);
+    return _this;
+  }
+
+  _createClass(TBCuptype, [{
+    key: 'next',
+    value: function next() {
+      this.reactSwipe.next();
+    }
+  }, {
+    key: 'prev',
+    value: function prev() {
+      this.reactSwipe.prev();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          cupType = _props.cupType,
+          handleInputChange = _props.handleInputChange;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'option-selector' },
+        _react2.default.createElement(
+          _reactSwipe2.default,
+          { ref: function ref(reactSwipe) {
+              return _this2.reactSwipe = reactSwipe;
+            }, className: 'carousel', swipeOptions: { continuous: false } },
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'cupType',
+              id: 'steelCups',
+              value: 'steelCups',
+              checked: cupType === 'steelCups',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'steelCups' },
+              'Stainless Steel'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'option' },
+            _react2.default.createElement('input', {
+              type: 'radio',
+              name: 'cupType',
+              id: 'brassCups',
+              value: 'brassCups',
+              checked: cupType === 'brassCups',
+              onChange: handleInputChange }),
+            _react2.default.createElement(
+              'label',
+              { className: 'option-label', htmlFor: 'brassCups' },
+              'Brass'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'option-controls' },
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.prev },
+            'Prev'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'option--btn', type: 'button', onClick: this.next },
+            'Next'
+          )
+        )
+      );
+    }
+  }]);
+
+  return TBCuptype;
+}(_react.Component);
+
+exports.default = TBCuptype;
+
+/***/ }),
+/* 395 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TBForm = function (_Component) {
+  _inherits(TBForm, _Component);
+
+  function TBForm(props) {
+    _classCallCheck(this, TBForm);
+
+    return _possibleConstructorReturn(this, (TBForm.__proto__ || Object.getPrototypeOf(TBForm)).call(this, props));
+  }
+
+  _createClass(TBForm, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          fullName = _props.fullName,
+          email = _props.email,
+          comments = _props.comments,
+          phone = _props.phone,
+          handleInputChange = _props.handleInputChange;
+
+
+      return _react2.default.createElement(
+        "div",
+        { className: "option-selector" },
+        _react2.default.createElement(
+          "div",
+          null,
+          _react2.default.createElement("input", { type: "text", value: fullName, name: "fullName", onChange: handleInputChange }),
+          _react2.default.createElement("input", { type: "email", value: email, name: "email", onChange: handleInputChange }),
+          _react2.default.createElement("input", { type: "tel", value: phone, name: "phone", onChange: handleInputChange }),
+          _react2.default.createElement("textarea", { type: "text", value: comments, name: "comments", onChange: handleInputChange })
+        )
+      );
+    }
+  }]);
+
+  return TBForm;
+}(_react.Component);
+
+exports.default = TBForm;
+
+/***/ }),
+/* 396 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TBSuccess = function (_Component) {
+  _inherits(TBSuccess, _Component);
+
+  function TBSuccess(props) {
+    _classCallCheck(this, TBSuccess);
+
+    return _possibleConstructorReturn(this, (TBSuccess.__proto__ || Object.getPrototypeOf(TBSuccess)).call(this, props));
+  }
+
+  _createClass(TBSuccess, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'h1',
+          null,
+          'Your inquery has been submitted. We\'ll get back to you shortly.'
+        )
+      );
+    }
+  }]);
+
+  return TBSuccess;
+}(_react.Component);
+
+exports.default = TBSuccess;
+
+/***/ }),
+/* 397 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(22);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TBDiningtop = function (_Component) {
+  _inherits(TBDiningtop, _Component);
+
+  function TBDiningtop(props) {
+    _classCallCheck(this, TBDiningtop);
+
+    return _possibleConstructorReturn(this, (TBDiningtop.__proto__ || Object.getPrototypeOf(TBDiningtop)).call(this, props));
+  }
+
+  _createClass(TBDiningtop, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          diningTop = _props.diningTop,
+          handleInputChange = _props.handleInputChange;
+
+
+      return _react2.default.createElement(
+        "div",
+        { className: "option-selector" },
+        _react2.default.createElement(
+          "div",
+          { className: "option" },
+          _react2.default.createElement("input", {
+            type: "radio",
+            name: "diningTop",
+            id: "yesDiningtop",
+            value: "ADD Dingingtop",
+            checked: diningTop === 'ADD Dingingtop',
+            onChange: handleInputChange }),
+          _react2.default.createElement(
+            "label",
+            { className: "option-label", htmlFor: "yesDiningtop" },
+            "Yes"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "option" },
+          _react2.default.createElement("input", {
+            type: "radio",
+            name: "diningTop",
+            id: "noDiningtop",
+            value: "NO Dingingtop",
+            checked: diningTop === 'NO Dingingtop',
+            onChange: handleInputChange }),
+          _react2.default.createElement(
+            "label",
+            { className: "option-label", htmlFor: "noDiningtop" },
+            "No"
+          )
+        )
+      );
+    }
+  }]);
+
+  return TBDiningtop;
+}(_react.Component);
+
+exports.default = TBDiningtop;
 
 /***/ })
 /******/ ]);
