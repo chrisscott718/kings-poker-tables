@@ -32,8 +32,7 @@ export default class TBShape extends Component {
                   checked={tableShape === 'round'}
                   onChange={handleInputChange} />
                 <label className="option-label" htmlFor="round">
-                  <img src="./images/buildyourown/shape-round.png" />
-                  Round
+                  <img src="./images/buildyourown/shape-round.svg" />
                 </label>
               </div>
               <div className="option">
@@ -45,8 +44,7 @@ export default class TBShape extends Component {
                   checked={tableShape === 'oval'}
                   onChange={handleInputChange} />
                 <label className="option-label" htmlFor="oval">
-                  <img src="./images/buildyourown/shape-oval.png" />
-                  Oval
+                  <img src="./images/buildyourown/shape-oval.svg" />
                 </label>
               </div>
               <div className="option">
@@ -58,8 +56,7 @@ export default class TBShape extends Component {
                   checked={tableShape === 'ellipse'}
                   onChange={handleInputChange} />
                 <label className="option-label" htmlFor="ellipse">
-                  <img src="./images/buildyourown/shape-ellipse.png" />
-                  Ellipse
+                  <img src="./images/buildyourown/shape-ellipse.svg" />
                 </label>
               </div>
               <div className="option">
@@ -71,8 +68,7 @@ export default class TBShape extends Component {
                   checked={tableShape === 'octagon'}
                   onChange={handleInputChange} />
                 <label className="option-label" htmlFor="octagon">
-                  <img src="./images/buildyourown/shape-octogon.png" />
-                  Octagon
+                  <img src="./images/buildyourown/shape-octogon.svg" />
                 </label>
               </div>
           </ReactSwipe>

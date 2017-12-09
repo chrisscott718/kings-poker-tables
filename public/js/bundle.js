@@ -30736,7 +30736,7 @@ exports = module.exports = __webpack_require__(54)(undefined);
 
 
 // module
-exports.push([module.i, "#tableBuilder {\n  margin-top: 2rem; }\n\n#currentFieldset {\n  width: 100%;\n  text-align: center; }\n\n#mainControls {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  position: relative;\n  margin-top: 1rem;\n  padding-top: 1rem; }\n\n#mainControls:before {\n    content: '';\n    display: block;\n    width: 50px;\n    height: 2px;\n    position: absolute;\n    top: 0;\n    left: 50%;\n    margin-left: -25px;\n    background: #21201f; }\n\n#mainControls button {\n    margin: 0 0.5rem;\n    min-width: 150px; }\n\n.fieldset-wrapper {\n  position: relative; }\n\n.option-controls {\n  position: absolute;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 100%;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between; }\n\n.option-controls .option--btn {\n    background: none;\n    border: none;\n    color: #21201f;\n    font-size: 2rem;\n    cursor: pointer;\n    opacity: 0.6;\n    padding: 0.5rem;\n    -webkit-transition: all 0.2s ease-in-out;\n    transition: all 0.2s ease-in-out; }\n\n.option-controls .option--btn:hover {\n      -webkit-transform: translateY(-1px);\n              transform: translateY(-1px);\n      opacity: 1; }\n\n.option-controls .option--btn:active {\n      -webkit-transform: translateY(1px);\n              transform: translateY(1px); }\n\n.option-selector {\n  position: relative; }\n\n.option input[type=radio] {\n  visibility: hidden;\n  width: 0;\n  height: 0;\n  overflow: hidden;\n  position: absolute; }\n\n.option .option-label {\n  text-align: center;\n  font-weight: bold;\n  letter-spacing: 1px;\n  text-transform: uppercase; }\n\n.option .option-label img {\n    display: block;\n    margin: 0 auto;\n    max-width: 300px;\n    margin-bottom: 0.5rem; }\n", ""]);
+exports.push([module.i, "#tableBuilder {\n  margin: 2rem 0; }\n\n#currentFieldset {\n  width: 100%;\n  text-align: center; }\n\n#mainControls {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  position: relative; }\n\n#mainControls button {\n    margin: 0 0.5rem;\n    min-width: 150px; }\n\n.fieldset-wrapper {\n  position: relative; }\n\n.option-controls {\n  position: absolute;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 100%;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between; }\n\n.option-controls .option--btn {\n    background: none;\n    border: none;\n    color: #21201f;\n    font-size: 2rem;\n    cursor: pointer;\n    opacity: 0.6;\n    padding: 0.5rem;\n    -webkit-transition: all 0.2s ease-in-out;\n    transition: all 0.2s ease-in-out; }\n\n.option-controls .option--btn:hover {\n      -webkit-transform: translateY(-1px);\n              transform: translateY(-1px);\n      opacity: 1; }\n\n.option-controls .option--btn:active {\n      -webkit-transform: translateY(1px);\n              transform: translateY(1px); }\n\n.option-selector {\n  position: relative; }\n\n.option input[type=radio] {\n  visibility: hidden;\n  width: 0;\n  height: 0;\n  overflow: hidden;\n  position: absolute; }\n\n.option .option-label {\n  text-align: center;\n  font-weight: bold;\n  letter-spacing: 1px;\n  text-transform: uppercase; }\n\n.option .option-label img {\n    display: block;\n    margin: 0 auto;\n    max-width: 300px;\n    margin-bottom: 0.5rem; }\n", ""]);
 
 // exports
 
@@ -31567,8 +31567,7 @@ var TBShape = function (_Component) {
             _react2.default.createElement(
               'label',
               { className: 'option-label', htmlFor: 'round' },
-              _react2.default.createElement('img', { src: './images/buildyourown/shape-round.png' }),
-              'Round'
+              _react2.default.createElement('img', { src: './images/buildyourown/shape-round.svg' })
             )
           ),
           _react2.default.createElement(
@@ -31584,8 +31583,7 @@ var TBShape = function (_Component) {
             _react2.default.createElement(
               'label',
               { className: 'option-label', htmlFor: 'oval' },
-              _react2.default.createElement('img', { src: './images/buildyourown/shape-oval.png' }),
-              'Oval'
+              _react2.default.createElement('img', { src: './images/buildyourown/shape-oval.svg' })
             )
           ),
           _react2.default.createElement(
@@ -31601,8 +31599,7 @@ var TBShape = function (_Component) {
             _react2.default.createElement(
               'label',
               { className: 'option-label', htmlFor: 'ellipse' },
-              _react2.default.createElement('img', { src: './images/buildyourown/shape-ellipse.png' }),
-              'Ellipse'
+              _react2.default.createElement('img', { src: './images/buildyourown/shape-ellipse.svg' })
             )
           ),
           _react2.default.createElement(
@@ -31618,8 +31615,7 @@ var TBShape = function (_Component) {
             _react2.default.createElement(
               'label',
               { className: 'option-label', htmlFor: 'octagon' },
-              _react2.default.createElement('img', { src: './images/buildyourown/shape-octogon.png' }),
-              'Octagon'
+              _react2.default.createElement('img', { src: './images/buildyourown/shape-octogon.svg' })
             )
           )
         ),
