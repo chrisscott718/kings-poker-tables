@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ReactSwipe from 'react-swipe';
 
 export default class TBCuptype extends Component {
   constructor(props) {

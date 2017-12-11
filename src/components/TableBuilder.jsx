@@ -13,6 +13,23 @@ import TBSuccess from 'TBSuccess';
 
 import './../styles/components/tableBuilder.scss';
 
+
+function LeftNavButton(props) {
+  const {onClick} = props
+  return (
+    <button onClick={onClick} className="option--btn option--btn__left">
+      <span className="lnr lnr-chevron-left"></span>
+    </button>
+  );
+}
+function RightNavButton(props) {
+  const {onClick} = props
+  return (
+    <button onClick={onClick} className="option--btn option--btn__right">
+      <span className="lnr lnr-chevron-right"></span>
+    </button>
+  );
+}
 export default class TableBuilder extends Component {
   constructor(props) {
     super(props);
@@ -58,15 +75,30 @@ export default class TableBuilder extends Component {
   }
 
   renderStep() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      lazyLoad: true,
+      swipeToSlide: true,
+      className: 'center',
+      centerMode: true,
+      centerPadding: '100px',
+      nextArrow: <RightNavButton />,
+      prevArrow: <LeftNavButton />
+    };
+
     switch (this.state.step) {
       case 1:
         return <TBShape
+                  settings={settings}
                   tableShape={this.state.tableShape}
                   handleInputChange={this.handleInputChange}
                 />
         break;
       case 2:
         return <TBPedestal
+                  settings={settings}
                   pedestal={this.state.pedestal}
                   handleInputChange={this.handleInputChange}
                 />

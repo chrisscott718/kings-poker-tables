@@ -6,18 +6,18 @@
 	.st0{fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;}
 </style>
 <g id="XMLID_31_">
-	<ellipse id="XMLID_27_" class="st0" cx="200" cy="200" rx="98.7" ry="197.5"/>
-	<ellipse id="XMLID_28_" class="st0" cx="200" cy="200" rx="82.6" ry="181.3"/>
-	<ellipse id="XMLID_29_" class="st0" cx="200" cy="200" rx="66.8" ry="165.4"/>
-	<circle id="XMLID_30_" class="st0" cx="125.3" cy="200" r="6.1"/>
-	<circle id="XMLID_32_" class="st0" cx="274.9" cy="200" r="6.1"/>
-	<circle id="XMLID_33_" class="st0" cx="265.9" cy="119.9" r="6.1"/>
-	<circle id="XMLID_34_" class="st0" cx="134.4" cy="120" r="6.1"/>
-	<circle id="XMLID_37_" class="st0" cx="166.7" cy="47" r="6.1"/>
-	<circle id="XMLID_38_" class="st0" cx="233.7" cy="47" r="6.1"/>
-	<circle id="XMLID_40_" class="st0" cx="166.7" cy="352.8" r="6.1"/>
-	<circle id="XMLID_39_" class="st0" cx="233.7" cy="352.8" r="6.1"/>
-	<circle id="XMLID_36_" class="st0" cx="265.9" cy="279.6" r="6.1"/>
-	<circle id="XMLID_35_" class="st0" cx="134.4" cy="279.7" r="6.1"/>
+	<ellipse id="XMLID_27_" class="st0" cx="200" cy="200" rx="197.5" ry="98.7"/>
+	<ellipse id="XMLID_28_" class="st0" cx="200" cy="200" rx="181.3" ry="82.6"/>
+	<ellipse id="XMLID_29_" class="st0" cx="200" cy="200" rx="165.4" ry="66.8"/>
+	<circle id="XMLID_30_" class="st0" cx="200" cy="125.3" r="6.1"/>
+	<circle id="XMLID_32_" class="st0" cx="200" cy="274.9" r="6.1"/>
+	<circle id="XMLID_33_" class="st0" cx="280.1" cy="265.9" r="6.1"/>
+	<circle id="XMLID_34_" class="st0" cx="280" cy="134.4" r="6.1"/>
+	<circle id="XMLID_37_" class="st0" cx="353" cy="166.7" r="6.1"/>
+	<circle id="XMLID_38_" class="st0" cx="353" cy="233.7" r="6.1"/>
+	<circle id="XMLID_40_" class="st0" cx="47.2" cy="166.7" r="6.1"/>
+	<circle id="XMLID_39_" class="st0" cx="47.2" cy="233.7" r="6.1"/>
+	<circle id="XMLID_36_" class="st0" cx="120.4" cy="265.9" r="6.1"/>
+	<circle id="XMLID_35_" class="st0" cx="120.3" cy="134.4" r="6.1"/>
 </g>
 </svg>

@@ -1,28 +1,15 @@
 import React, {Component} from 'react';
-import ReactSwipe from 'react-swipe';
-
-import {OptionControls} from 'OptionControls';
 
 export default class TBWoodtype extends Component {
   constructor(props) {
     super(props);
-    this.next = this.next.bind(this);
-    this.prev = this.prev.bind(this);
   }
 
-  next() {
-    this.reactSwipe.next();
-  }
-
-  prev() {
-    this.reactSwipe.prev();
-  }
 
   render () {
     const {woodType, handleInputChange} = this.props;
     return (
         <div className="option-selector">
-          <ReactSwipe ref={reactSwipe => this.reactSwipe = reactSwipe} className="carousel" swipeOptions={{continuous: false}}>
             <div className="option">
               <input
                 type="radio"
@@ -53,8 +40,6 @@ export default class TBWoodtype extends Component {
                 onChange={handleInputChange} />
               <label className="option-label" htmlFor="wtWalnut">Walnut </label>
             </div>
-          </ReactSwipe>
-          <OptionControls next={this.next} prev={this.prev} />
         </div>
     )
   }

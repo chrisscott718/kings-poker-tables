@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ReactSwipe from 'react-swipe';
 
 export default class TBFabric extends Component {
   constructor(props) {

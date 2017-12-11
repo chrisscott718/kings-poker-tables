@@ -1,30 +1,18 @@
 import React, {Component} from 'react';
-import ReactSwipe from 'react-swipe';
-
-import {OptionControls} from 'OptionControls';
+import Slider from 'react-slick';
 
 export default class TBPedestal extends Component {
   constructor(props) {
     super(props);
-    this.next = this.next.bind(this);
-    this.prev = this.prev.bind(this);
-  }
-
-  next() {
-    this.reactSwipe.next();
-  }
-
-  prev() {
-    this.reactSwipe.prev();
   }
 
   render () {
 
-    const {pedestal, handleInputChange} = this.props;
+    const {pedestal, handleInputChange, settings} = this.props;
 
     return (
         <div className="option-selector">
-          <ReactSwipe ref={reactSwipe => this.reactSwipe = reactSwipe} className="carousel" swipeOptions={{continuous: true}}>
+          <Slider {...settings}>
             <div className="option">
               <input
                 type="radio"
@@ -64,8 +52,7 @@ export default class TBPedestal extends Component {
                 Executive
               </label>
             </div>
-          </ReactSwipe>
-          <OptionControls next={this.next} prev={this.prev} />
+          </Slider>
         </div>
     )
   }

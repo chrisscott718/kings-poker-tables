@@ -21,6 +21,11 @@
 
 .fieldset-wrapper {
   position: relative;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  .option-selector {
+    max-width: 100%;
+  }
 }
 
 .option-controls {
@@ -30,23 +35,29 @@
   top: 50%;
   transform: translateY(-50%);
   justify-content: space-between;
-  .option--btn {
-    background: none;
-    border: none;
-    color: $primary-dark;
-    font-size: 2rem;
-    cursor: pointer;
-    opacity: 0.6;
-    padding: 0.5rem;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      transform: translateY(-1px);
-      opacity: 1;
-    }
-    &:active {
-      transform: translateY(1px);
-    }
+}
+.option--btn {
+  background: none;
+  border: none;
+  color: $primary-dark;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0.6;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  transform: translateY(-50%);
+  &:hover {
+    opacity: 1;
   }
+}
+.option--btn__left {
+  left: 0;
+}
+.option--btn__right {
+  right: 0;
 }
 
 .option-selector {
@@ -54,6 +65,7 @@
 }
 
 .option {
+  position: relative;
   input[type=radio] {
     visibility: hidden;
     width: 0;
@@ -61,16 +73,41 @@
     overflow: hidden;
     position: absolute;
   }
-  .option-label {
+}
+
+
+.option-label {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:after {
+    content: '\e87f';
+    display: block;
     text-align: center;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    img {
-      display: block;
-      margin: 0 auto;
-      max-width: 300px;
-      margin-bottom: 0.5rem;
-    }
+    font-family: 'Linearicons-Free';
+    font-size: 3rem;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
   }
+  &:hover:after {
+    opacity: 0.4;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.option > input[type="radio"]:checked+label:after {
+  opacity: 1;
+  color: #7ac142;
 }
