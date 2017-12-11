@@ -10,11 +10,17 @@ export default class TBForm extends Component {
 
     return (
         <div className="option-selector">
-          <div>
-            <input type="text" value={fullName} name="fullName" onChange={handleInputChange} />
-            <input type="email" value={email} name="email" onChange={handleInputChange} />
+          <h3>Let us know how to contact you.</h3>
+          <p className="help-text">We never share your info.</p>
+          <div className="">
+            <label>Your Name</label>
+            <input type="text" value={fullName} name="fullName" onChange={handleInputChange} placeholder="Full Name" />
+            <label>Email Address</label>
+            <input type="email" value={email} name="email" onChange={handleInputChange} placeholder="example@example.com" />
+            <label>Phone Number</label>
             <input type="tel" value={phone} name="phone" onChange={handleInputChange} />
-            <textarea type="text" value={comments} name="comments" onChange={handleInputChange}></textarea>
+            <label>Comments</label>
+            <textarea type="text" value={comments} name="comments" onChange={handleInputChange} placeholder="Anything else we should know?"></textarea>
           </div>
         </div>
     )

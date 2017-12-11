@@ -53,6 +53,13 @@ export default class TableBuilder extends Component {
     this.renderStep = this.renderStep.bind(this);
     this.next = this.next.bind(this);
     this.prev = this.prev.bind(this);
+    this.formSubmit = this.formSubmit.bind(this);
+  }
+
+  formSubmit(e) {
+    e.preventDefault();
+    console.log('simulating email send');
+    this.next();
   }
 
   handleInputChange(event) {
@@ -76,14 +83,12 @@ export default class TableBuilder extends Component {
 
   renderStep() {
     const settings = {
-      dots: true,
       infinite: true,
       speed: 500,
-      lazyLoad: true,
       swipeToSlide: true,
       className: 'center',
       centerMode: true,
-      centerPadding: '100px',
+      slidesToShow: 1,
       nextArrow: <RightNavButton />,
       prevArrow: <LeftNavButton />
     };
@@ -152,14 +157,16 @@ export default class TableBuilder extends Component {
     }
   }
 
-
   render () {
+    let stepWidth = this.state.step * 10;
     return (
       <section id="tableBuilder">
         <div id="stepIndicator">
-          <span>{this.state.step}</span>
+          <span className="step-outer">
+            <span className="step-inner" style={{width: `${stepWidth}%`}}></span>
+          </span>
         </div>
-        <form onSubmit={() => {console.log('form submitted')}}>
+        <form onSubmit={this.formSubmit}>
           <div id="currentFieldset">
             <div className="fieldset-wrapper">
               {this.renderStep()}

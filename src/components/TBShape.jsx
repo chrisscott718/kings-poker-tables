@@ -10,6 +10,8 @@ export default class TBShape extends Component {
     const {tableShape, handleInputChange, settings} = this.props;
     return (
         <div className="option-selector">
+          <h3>Table Shape</h3>
+          <p className="help-text">Choose a table shape. Custom shapes and dimentions also available.</p>
           <Slider {...settings}>
             <div className="option">
               <input
@@ -21,6 +23,7 @@ export default class TBShape extends Component {
                 onChange={handleInputChange} />
               <label className="option-label" htmlFor="round">
                 <img src="./images/buildyourown/shape-round.svg" />
+                Round
               </label>
             </div>
             <div className="option">
@@ -33,6 +36,7 @@ export default class TBShape extends Component {
                 onChange={handleInputChange} />
               <label className="option-label" htmlFor="oval">
                 <img src="./images/buildyourown/shape-oval.svg" />
+                Oval
               </label>
             </div>
             <div className="option">
@@ -45,6 +49,7 @@ export default class TBShape extends Component {
                 onChange={handleInputChange} />
               <label className="option-label" htmlFor="ellipse">
                 <img src="./images/buildyourown/shape-ellipse.svg" />
+                Ellipse
               </label>
             </div>
             <div className="option">
@@ -57,6 +62,7 @@ export default class TBShape extends Component {
                 onChange={handleInputChange} />
               <label className="option-label" htmlFor="octagon">
                 <img src="./images/buildyourown/shape-octogon.svg" />
+                Octagon
               </label>
             </div>
           </Slider>

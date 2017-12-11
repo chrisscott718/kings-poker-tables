@@ -58,12 +58,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 .main-section {
-  padding: 4rem;
+  padding: 2rem 0;
 }
 
-
 /// MEDIA QUERIES
-
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
@@ -83,6 +81,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+  .main-section {
+    padding: 4rem;
   }
 }
 

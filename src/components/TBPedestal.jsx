@@ -12,6 +12,8 @@ export default class TBPedestal extends Component {
 
     return (
         <div className="option-selector">
+          <h3>Pedestal Style</h3>
+          <p className="help-text">Custom pedestal options available. Call for details.</p>
           <Slider {...settings}>
             <div className="option">
               <input
@@ -22,7 +24,7 @@ export default class TBPedestal extends Component {
                 checked={pedestal === 'clawPedestal' }
                 onChange={handleInputChange} />
               <label className="option-label" htmlFor="clawPedestal">
-                <img src="./images/buildyourown/pedestal-claw.png" />
+                <img src="./images/buildyourown/pedestal-claw.svg" />
                 Claw
               </label>
             </div>
@@ -35,7 +37,7 @@ export default class TBPedestal extends Component {
                 checked={pedestal === 'reedPedestal' }
                 onChange={handleInputChange} />
               <label className="option-label" htmlFor="reedPedestal">
-                <img src="./images/buildyourown/pedestal-claw.png" />
+                <img src="./images/buildyourown/pedestal-reed.svg" />
                 Reed
               </label>
             </div>
@@ -48,7 +50,7 @@ export default class TBPedestal extends Component {
                 checked={pedestal === 'executivePedestal' }
                 onChange={handleInputChange} />
               <label className="option-label" htmlFor="executivePedestal">
-                <img src="./images/buildyourown/pedestal-claw.png" />
+                <img src="./images/buildyourown/pedestal-executive.svg" />
                 Executive
               </label>
             </div>

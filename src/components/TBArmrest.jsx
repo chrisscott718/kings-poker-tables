@@ -7,7 +7,11 @@ export default class TBArmrest extends Component {
   render () {
     const {armRest, handleInputChange} = this.props;
     return (
-        <div className="option-selector">
+        <div className="option-selector multi-selector">
+          <div className="options-text">
+            <h3>Armrest Material</h3>
+            <p className="help-text">More colors available. Call for details.</p>
+          </div>
           <div className="option">
             <input
               type="radio"

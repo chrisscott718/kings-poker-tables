@@ -1,11 +1,13 @@
 @import "./../variables.scss";
 
 #tableBuilder {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
+
 #currentFieldset {
   width: 100%;
   text-align: center;
+  flex-grow: 1;
 }
 #mainControls {
   width: 100%;
@@ -19,9 +21,29 @@
   }
 }
 
+#stepIndicator {
+  margin-bottom: 1rem;
+  .step-outer {
+    width: 100%;
+    background: #cecece;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    height: 10px;
+    .step-inner {
+      background: $primary-green;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 10px;
+      transition: all 0.2s ease-in-out;
+      border-radius: 10px;
+    }
+  }
+}
+
 .fieldset-wrapper {
   position: relative;
-  padding-bottom: 2rem;
   margin-bottom: 2rem;
   .option-selector {
     max-width: 100%;
@@ -62,6 +84,24 @@
 
 .option-selector {
   position: relative;
+  .help-text {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+  h3 {
+    font-size: 1.8rem;
+    font-weight: normal;
+  }
+}
+
+.slick-slide {
+  opacity: 0.2;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+.slick-slide.slick-active {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .option {
@@ -82,32 +122,131 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
-  &:after {
-    content: '\e87f';
-    display: block;
-    text-align: center;
-    font-family: 'Linearicons-Free';
-    font-size: 3rem;
-    transition: all 0.2s ease-in-out;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    opacity: 0;
-    transform: translateX(-50%) translateY(-50%);
-  }
-  &:hover:after {
-    opacity: 0.4;
-  }
   img {
     display: block;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 300px;
     margin-bottom: 0.5rem;
   }
 }
 
-.option > input[type="radio"]:checked+label:after {
-  opacity: 1;
-  color: #7ac142;
+.multi-selector {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 300px;
+  .options-text {
+    flex-grow: 1;
+    flex-basis: 100%;
+    align-self: flex-start;
+  }
+  .option {
+    margin: 1rem;
+
+  }
+  .option-label {
+    &:after {
+      content: '';
+      display: block;
+    }
+    img {
+      width: 100px;
+      border-radius: 50%;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.4);
+    }
+  }
+  .option > input[type="radio"]:checked+label {
+    img {
+      box-shadow: 0px 0px 0px 3px rgba(133,224,117,0.8);
+    }
+  }
+}
+
+
+
+$curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
+.quote-confirmation {
+  padding: 2rem auto;
+}
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: $primary-green;
+  fill: none;
+  animation: stroke .6s $curve forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 2rem auto;
+  box-shadow: inset 0px 0px 0px $primary-green;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke .3s $curve .8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px $primary-green;
+  }
+}
+
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  #tableBuilder {
+    margin: 2rem 0;
+    form {
+      display: flex;
+      flex-direction: column;
+      min-height: 60vh;
+    }
+  }
+  .multi-selector {
+    min-height: 368px;
+    .option-label {
+      img {
+        width: 125px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
 }

@@ -8,7 +8,11 @@ export default class TBFabric extends Component {
   render () {
     const {fabricColor, handleInputChange} = this.props;
     return (
-        <div className="option-selector">
+        <div className="option-selector multi-selector">
+          <div className="options-text">
+            <h3>Fabric Color</h3>
+            <p className="help-text">Custom colors, printing, and embroidery available. Call for details.</p>
+          </div>
           <div className="option">
             <input
               type="radio"
@@ -72,19 +76,6 @@ export default class TBFabric extends Component {
             <label className="option-label" htmlFor="fcBlue">
               <img src="./images/buildyourown/fabric-blue.png" />
               Blue
-            </label>
-          </div>
-          <div className="option">
-            <input
-              type="radio"
-              name="fabricColor"
-              id="fcCustom"
-              value="customFabric"
-              checked={fabricColor === 'customFabric'}
-              onChange={handleInputChange} />
-            <label className="option-label" htmlFor="fcCustom">
-              <img src="./images/buildyourown/fabric-custom.png" />
-              Custom
             </label>
           </div>
         </div>
