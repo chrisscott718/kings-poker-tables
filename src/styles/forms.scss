@@ -1,0 +1,34 @@
+@import "./variables.scss";
+
+.input-form {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.form-group {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem;
+  label {
+    font-weight: bold;
+    line-height: 2;
+    text-transform: uppercase;
+    display: block;
+    font-size: 12px;
+    span { color: red; }
+  }
+  input, textarea {
+    padding: 0.9rem;
+    background: none;
+    width: 100%;
+    border: solid 1px lighten($primary-dark, 50%);
+    border-radius: 1px;
+    transition: all 0.2s ease-in-out;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    &:focus {
+      border-color: $primary-dark;
+    }
+  }
+}

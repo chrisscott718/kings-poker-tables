@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import CSSTransition from 'react-transition-group';
 
 import TBShape from 'TBShape';
 import TBPedestal from 'TBPedestal';
@@ -12,6 +13,7 @@ import TBDiningtop from 'TBDiningtop';
 import TBSuccess from 'TBSuccess';
 
 import './../styles/components/tableBuilder.scss';
+import './../styles/forms.scss';
 
 
 function LeftNavButton(props) {
@@ -89,30 +91,37 @@ export default class TableBuilder extends Component {
       className: 'center',
       centerMode: true,
       slidesToShow: 1,
+      lazyLoad: true,
       nextArrow: <RightNavButton />,
       prevArrow: <LeftNavButton />
     };
 
     switch (this.state.step) {
       case 1:
-        return <TBShape
-                  settings={settings}
-                  tableShape={this.state.tableShape}
-                  handleInputChange={this.handleInputChange}
-                />
+        return (
+              <TBShape
+                settings={settings}
+                tableShape={this.state.tableShape}
+                handleInputChange={this.handleInputChange}
+              />
+        )
         break;
       case 2:
-        return <TBPedestal
-                  settings={settings}
-                  pedestal={this.state.pedestal}
-                  handleInputChange={this.handleInputChange}
-                />
+        return (
+              <TBPedestal
+                settings={settings}
+                pedestal={this.state.pedestal}
+                handleInputChange={this.handleInputChange}
+              />
+        )
         break;
       case 3:
-        return <TBArmrest
-                  armRest={this.state.armRest}
-                  handleInputChange={this.handleInputChange}
-                />
+        return (
+            <TBArmrest
+              armRest={this.state.armRest}
+              handleInputChange={this.handleInputChange}
+            />
+        )
         break;
       case 4:
         return <TBFabric
