@@ -28356,6 +28356,14 @@ var _BuildYourOwn = __webpack_require__(380);
 
 var _BuildYourOwn2 = _interopRequireDefault(_BuildYourOwn);
 
+var _About = __webpack_require__(423);
+
+var _About2 = _interopRequireDefault(_About);
+
+var _Collections = __webpack_require__(424);
+
+var _Collections2 = _interopRequireDefault(_Collections);
+
 __webpack_require__(397);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -28396,6 +28404,12 @@ var App = function (_Component) {
         _react2.default.createElement(_MainHeader2.default, { scrollToElement: this.scrollToElement }),
         _react2.default.createElement(_BuildYourOwn2.default, { ref: function ref(el) {
             _this2.byo = el;
+          } }),
+        _react2.default.createElement(_Collections2.default, { ref: function ref(el) {
+            _this2.col = el;
+          } }),
+        _react2.default.createElement(_About2.default, { ref: function ref(el) {
+            _this2.story = el;
           } })
       );
     }
@@ -28533,7 +28547,7 @@ var NavItems = function NavItems(_ref) {
               { className: 'nav-item' },
               _react2.default.createElement(
                 'button',
-                { className: 'nav-link', onClick: handleClick.bind(undefined, 'sty') },
+                { className: 'nav-link', onClick: handleClick.bind(undefined, 'story') },
                 'Our Story'
               )
             ),
@@ -30228,6 +30242,16 @@ var MainHeader = function (_Component) {
                 { className: 'btn btn-default', onClick: this.handleScroll },
                 'Start Building'
               )
+            ),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Call us ',
+              _react2.default.createElement(
+                'a',
+                { href: 'tel:1-800-897-1189' },
+                '800-897-1189'
+              )
             )
           ),
           _react2.default.createElement(
@@ -31826,7 +31850,7 @@ exports = module.exports = __webpack_require__(57)(undefined);
 
 
 // module
-exports.push([module.i, "#tableBuilder {\n  margin: 1rem 0; }\n\n#currentFieldset {\n  width: 100%;\n  text-align: center;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1; }\n\n#mainControls {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  position: relative; }\n\n#mainControls button {\n    margin: 0 0.5rem;\n    min-width: 150px; }\n\n#stepIndicator {\n  margin-bottom: 1rem; }\n\n#stepIndicator .step-outer {\n    width: 100%;\n    background: #cecece;\n    display: block;\n    position: relative;\n    border-radius: 10px;\n    height: 10px; }\n\n#stepIndicator .step-outer .step-inner {\n      background: #7ac142;\n      position: absolute;\n      top: 0;\n      left: 0;\n      height: 10px;\n      -webkit-transition: all 0.2s ease-in-out;\n      transition: all 0.2s ease-in-out;\n      border-radius: 10px; }\n\n.fieldset-wrapper {\n  position: relative;\n  margin-bottom: 2rem; }\n\n.fieldset-wrapper .option-selector {\n    max-width: 100%; }\n\n.option-controls {\n  position: absolute;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 100%;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between; }\n\n.option--btn {\n  background: none;\n  border: none;\n  color: #21201f;\n  font-size: 2rem;\n  cursor: pointer;\n  opacity: 0.6;\n  padding: 0.5rem;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n  position: absolute;\n  top: 50%;\n  z-index: 100;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%); }\n\n.option--btn:hover {\n    opacity: 1; }\n\n.option--btn__left {\n  left: 0; }\n\n.option--btn__right {\n  right: 0; }\n\n@-webkit-keyframes animatedSlide {\n  from {\n    -webkit-transform: translateY(-50px);\n            transform: translateY(-50px);\n    opacity: 0; }\n  to {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n            transform: translateY(0px); } }\n\n@keyframes animatedSlide {\n  from {\n    -webkit-transform: translateY(-50px);\n            transform: translateY(-50px);\n    opacity: 0; }\n  to {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n            transform: translateY(0px); } }\n\n.option-selector {\n  position: relative;\n  -webkit-animation-name: animatedSlide;\n          animation-name: animatedSlide;\n  -webkit-animation-duration: 0.2s;\n          animation-duration: 0.2s;\n  -webkit-animation-fill-mode: none;\n          animation-fill-mode: none;\n  -webkit-animation-direction: normal;\n          animation-direction: normal;\n  -webkit-animation-timing-function: ease-in-out;\n          animation-timing-function: ease-in-out; }\n\n.option-selector .help-text {\n    font-size: 12px;\n    opacity: 0.7; }\n\n.option-selector h3 {\n    font-size: 1.8rem;\n    font-weight: normal; }\n\n.slick-slide {\n  opacity: 0.2;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n  -webkit-transform: scale(0.8);\n          transform: scale(0.8); }\n\n.slick-slide.slick-active {\n  opacity: 1;\n  -webkit-transform: scale(1);\n          transform: scale(1); }\n\n.option {\n  position: relative; }\n\n.option input[type=radio] {\n    visibility: hidden;\n    width: 0;\n    height: 0;\n    overflow: hidden;\n    position: absolute; }\n\n.option-label {\n  text-align: center;\n  font-weight: bold;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  cursor: pointer; }\n\n.option-label img {\n    display: block;\n    margin: 0 auto;\n    max-width: 300px;\n    margin-bottom: 0.5rem; }\n\n.option-label:after {\n    content: '\\E87F';\n    display: block;\n    position: absolute;\n    width: 50px;\n    height: 50px;\n    font-family: 'Linearicons-Free';\n    line-height: 46px;\n    font-size: 1.8rem;\n    background: #d7d7d7;\n    text-align: center;\n    color: white;\n    opacity: 1;\n    border-radius: 50%;\n    top: 50%;\n    left: 50%;\n    padding-left: 3px;\n    padding-top: 3px;\n    -webkit-transition: all 0.2s ease-in-out;\n    transition: all 0.2s ease-in-out;\n    opacity: 0;\n    margin-left: -25px;\n    margin-top: -40px;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    border: solid 1px #dbdbdb; }\n\n.option-label:hover:after {\n    opacity: 0.5;\n    -webkit-transform: scale(1);\n            transform: scale(1); }\n\n.option > input[type=\"radio\"]:checked + label:after {\n  opacity: 1;\n  background: white;\n  color: #7ac142;\n  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);\n          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);\n  -webkit-transform: scale(1);\n          transform: scale(1); }\n\n.multi-selector {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  text-align: center;\n  min-height: 300px; }\n\n.multi-selector .options-text {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    -ms-flex-preferred-size: 100%;\n        flex-basis: 100%;\n    -ms-flex-item-align: start;\n        align-self: flex-start; }\n\n.multi-selector .option {\n    margin: 1rem; }\n\n.multi-selector .option-label:after {\n    margin-left: -27px;\n    margin-top: -42px; }\n\n.multi-selector .option-label img {\n    width: 100px;\n    border-radius: 50%;\n    -webkit-transition: all 0.2s ease-in-out;\n    transition: all 0.2s ease-in-out;\n    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4);\n            box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4); }\n\n.multi-selector .option > input[type=\"radio\"]:checked + label img {\n    -webkit-box-shadow: 0px 0px 0px 3px rgba(133, 224, 117, 0.8);\n            box-shadow: 0px 0px 0px 3px rgba(133, 224, 117, 0.8); }\n\n@-webkit-keyframes revealTopDown {\n  from {\n    -webkit-transform-origin: top;\n            transform-origin: top;\n    -webkit-transform: scaleY(0);\n            transform: scaleY(0);\n    opacity: 0; }\n  to {\n    opacity: 1;\n    -webkit-transform-origin: top;\n            transform-origin: top;\n    -webkit-transform: scaleY(1);\n            transform: scaleY(1); } }\n\n@keyframes revealTopDown {\n  from {\n    -webkit-transform-origin: top;\n            transform-origin: top;\n    -webkit-transform: scaleY(0);\n            transform: scaleY(0);\n    opacity: 0; }\n  to {\n    opacity: 1;\n    -webkit-transform-origin: top;\n            transform-origin: top;\n    -webkit-transform: scaleY(1);\n            transform: scaleY(1); } }\n\n.quote-confirmation {\n  padding: 2rem auto;\n  position: relative; }\n\n.quote-confirmation h1 {\n    font-size: 2rem; }\n\n.quote-confirmation .arrow-down {\n    content: '';\n    display: block;\n    position: absolute;\n    left: 50%;\n    bottom: -220px;\n    width: 1px;\n    background: #21201f;\n    height: 200px;\n    -webkit-animation-name: revealTopDown;\n            animation-name: revealTopDown;\n    -webkit-animation-duration: 0.5s;\n            animation-duration: 0.5s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-delay: 0.2s;\n            animation-delay: 0.2s;\n    opacity: 0; }\n\n.quote-confirmation .arrow-down:after {\n      content: '';\n      display: block;\n      position: absolute;\n      bottom: 1px;\n      left: -5px;\n      border-left: solid 1px #21201f;\n      border-bottom: solid 1px #21201f;\n      -webkit-transition: all 0.2s ease-in-out;\n      transition: all 0.2s ease-in-out;\n      width: 10px;\n      height: 10px;\n      -webkit-transform: rotate(-45deg);\n              transform: rotate(-45deg); }\n\n.checkmark__circle {\n  stroke-dasharray: 166;\n  stroke-dashoffset: 166;\n  stroke-width: 2;\n  stroke-miterlimit: 10;\n  stroke: #7ac142;\n  fill: none;\n  -webkit-animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;\n          animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards; }\n\n.checkmark {\n  width: 56px;\n  height: 56px;\n  border-radius: 50%;\n  display: block;\n  stroke-width: 2;\n  stroke: #fff;\n  stroke-miterlimit: 10;\n  margin: 2rem auto;\n  -webkit-box-shadow: inset 0px 0px 0px #7ac142;\n          box-shadow: inset 0px 0px 0px #7ac142;\n  -webkit-animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;\n          animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both; }\n\n.checkmark__check {\n  -webkit-transform-origin: 50% 50%;\n          transform-origin: 50% 50%;\n  stroke-dasharray: 48;\n  stroke-dashoffset: 48;\n  -webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;\n          animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards; }\n\n@-webkit-keyframes stroke {\n  100% {\n    stroke-dashoffset: 0; } }\n\n@keyframes stroke {\n  100% {\n    stroke-dashoffset: 0; } }\n\n@-webkit-keyframes scale {\n  0%, 100% {\n    -webkit-transform: none;\n            transform: none; }\n  50% {\n    -webkit-transform: scale3d(1.1, 1.1, 1);\n            transform: scale3d(1.1, 1.1, 1); } }\n\n@keyframes scale {\n  0%, 100% {\n    -webkit-transform: none;\n            transform: none; }\n  50% {\n    -webkit-transform: scale3d(1.1, 1.1, 1);\n            transform: scale3d(1.1, 1.1, 1); } }\n\n@-webkit-keyframes fill {\n  100% {\n    -webkit-box-shadow: inset 0px 0px 0px 30px #7ac142;\n            box-shadow: inset 0px 0px 0px 30px #7ac142; } }\n\n@keyframes fill {\n  100% {\n    -webkit-box-shadow: inset 0px 0px 0px 30px #7ac142;\n            box-shadow: inset 0px 0px 0px 30px #7ac142; } }\n\n@media (min-width: 992px) {\n  #tableBuilder {\n    margin: 2rem 0; }\n    #tableBuilder form {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n      min-height: 60vh; }\n  .multi-selector {\n    min-height: 368px; }\n    .multi-selector .option-label img {\n      width: 125px; } }\n", ""]);
+exports.push([module.i, "#tableBuilder {\n  margin: 1rem 0; }\n\n#currentFieldset {\n  width: 100%;\n  text-align: center;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1; }\n\n#mainControls {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  position: relative; }\n\n#mainControls button {\n    margin: 0 0.5rem;\n    min-width: 150px; }\n\n#stepIndicator {\n  margin-bottom: 1rem; }\n\n#stepIndicator .step-outer {\n    width: 100%;\n    background: #cecece;\n    display: block;\n    position: relative;\n    border-radius: 10px;\n    height: 10px; }\n\n#stepIndicator .step-outer .step-inner {\n      background: #7ac142;\n      position: absolute;\n      top: 0;\n      left: 0;\n      height: 10px;\n      -webkit-transition: all 0.2s ease-in-out;\n      transition: all 0.2s ease-in-out;\n      border-radius: 10px; }\n\n.fieldset-wrapper {\n  position: relative;\n  margin-bottom: 2rem; }\n\n.fieldset-wrapper .option-selector {\n    max-width: 100%; }\n\n.option-controls {\n  position: absolute;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 100%;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between; }\n\n.option--btn {\n  background: none;\n  border: none;\n  color: #21201f;\n  font-size: 2rem;\n  cursor: pointer;\n  opacity: 0.6;\n  padding: 0.5rem;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n  position: absolute;\n  top: 50%;\n  z-index: 100;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%); }\n\n.option--btn:hover {\n    opacity: 1; }\n\n.option--btn__left {\n  left: 0; }\n\n.option--btn__right {\n  right: 0; }\n\n@-webkit-keyframes animatedSlide {\n  from {\n    -webkit-transform: translateY(-50px);\n            transform: translateY(-50px);\n    opacity: 0; }\n  to {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n            transform: translateY(0px); } }\n\n@keyframes animatedSlide {\n  from {\n    -webkit-transform: translateY(-50px);\n            transform: translateY(-50px);\n    opacity: 0; }\n  to {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n            transform: translateY(0px); } }\n\n.option-selector {\n  position: relative;\n  -webkit-animation-name: animatedSlide;\n          animation-name: animatedSlide;\n  -webkit-animation-duration: 0.2s;\n          animation-duration: 0.2s;\n  -webkit-animation-fill-mode: none;\n          animation-fill-mode: none;\n  -webkit-animation-direction: normal;\n          animation-direction: normal;\n  -webkit-animation-timing-function: ease-in-out;\n          animation-timing-function: ease-in-out; }\n\n.option-selector .help-text {\n    font-size: 12px;\n    opacity: 0.7; }\n\n.option-selector h3 {\n    font-size: 1.6rem;\n    font-weight: normal; }\n\n.slick-slide {\n  opacity: 0.2;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n  -webkit-transform: scale(0.8);\n          transform: scale(0.8); }\n\n.slick-slide.slick-active {\n  opacity: 1;\n  -webkit-transform: scale(1);\n          transform: scale(1); }\n\n.option {\n  position: relative; }\n\n.option input[type=radio] {\n    visibility: hidden;\n    width: 0;\n    height: 0;\n    overflow: hidden;\n    position: absolute; }\n\n.option-label {\n  text-align: center;\n  font-weight: bold;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  cursor: pointer; }\n\n.option-label img {\n    display: block;\n    margin: 0 auto;\n    max-width: 300px;\n    margin-bottom: 0.5rem; }\n\n.option-label:after {\n    content: '\\E87F';\n    display: block;\n    position: absolute;\n    width: 50px;\n    height: 50px;\n    font-family: 'Linearicons-Free';\n    line-height: 46px;\n    font-size: 1.8rem;\n    background: #d7d7d7;\n    text-align: center;\n    color: white;\n    opacity: 1;\n    border-radius: 50%;\n    top: 50%;\n    left: 50%;\n    padding-left: 3px;\n    padding-top: 3px;\n    -webkit-transition: all 0.2s ease-in-out;\n    transition: all 0.2s ease-in-out;\n    opacity: 0;\n    margin-left: -25px;\n    margin-top: -40px;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    border: solid 1px #dbdbdb; }\n\n.option-label:hover:after {\n    opacity: 0.5;\n    -webkit-transform: scale(1);\n            transform: scale(1); }\n\n.option > input[type=\"radio\"]:checked + label:after {\n  opacity: 1;\n  background: white;\n  color: #7ac142;\n  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);\n          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);\n  -webkit-transform: scale(1);\n          transform: scale(1); }\n\n.multi-selector {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  text-align: center;\n  min-height: 300px; }\n\n.multi-selector .options-text {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    -ms-flex-preferred-size: 100%;\n        flex-basis: 100%;\n    -ms-flex-item-align: start;\n        align-self: flex-start; }\n\n.multi-selector .option {\n    margin: 1rem; }\n\n.multi-selector .option-label:after {\n    margin-left: -27px;\n    margin-top: -42px; }\n\n.multi-selector .option-label img {\n    width: 100px;\n    border-radius: 50%;\n    -webkit-transition: all 0.2s ease-in-out;\n    transition: all 0.2s ease-in-out;\n    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4);\n            box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4); }\n\n.multi-selector .option > input[type=\"radio\"]:checked + label img {\n    -webkit-box-shadow: 0px 0px 0px 3px rgba(133, 224, 117, 0.8);\n            box-shadow: 0px 0px 0px 3px rgba(133, 224, 117, 0.8); }\n\n@-webkit-keyframes revealTopDown {\n  from {\n    -webkit-transform-origin: top;\n            transform-origin: top;\n    -webkit-transform: scaleY(0);\n            transform: scaleY(0);\n    opacity: 0; }\n  to {\n    opacity: 1;\n    -webkit-transform-origin: top;\n            transform-origin: top;\n    -webkit-transform: scaleY(1);\n            transform: scaleY(1); } }\n\n@keyframes revealTopDown {\n  from {\n    -webkit-transform-origin: top;\n            transform-origin: top;\n    -webkit-transform: scaleY(0);\n            transform: scaleY(0);\n    opacity: 0; }\n  to {\n    opacity: 1;\n    -webkit-transform-origin: top;\n            transform-origin: top;\n    -webkit-transform: scaleY(1);\n            transform: scaleY(1); } }\n\n.quote-confirmation {\n  padding: 2rem auto;\n  position: relative; }\n\n.quote-confirmation h1 {\n    font-size: 1.5rem; }\n\n.quote-confirmation .arrow-down {\n    content: '';\n    display: block;\n    position: absolute;\n    left: 50%;\n    bottom: -120px;\n    width: 1px;\n    background: #21201f;\n    height: 100px;\n    -webkit-animation-name: revealTopDown;\n            animation-name: revealTopDown;\n    -webkit-animation-duration: 0.5s;\n            animation-duration: 0.5s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-delay: 0.2s;\n            animation-delay: 0.2s;\n    opacity: 0; }\n\n.quote-confirmation .arrow-down:after {\n      content: '';\n      display: block;\n      position: absolute;\n      bottom: 1px;\n      left: -5px;\n      border-left: solid 1px #21201f;\n      border-bottom: solid 1px #21201f;\n      -webkit-transition: all 0.2s ease-in-out;\n      transition: all 0.2s ease-in-out;\n      width: 10px;\n      height: 10px;\n      -webkit-transform: rotate(-45deg);\n              transform: rotate(-45deg); }\n\n.checkmark__circle {\n  stroke-dasharray: 166;\n  stroke-dashoffset: 166;\n  stroke-width: 2;\n  stroke-miterlimit: 10;\n  stroke: #7ac142;\n  fill: none;\n  -webkit-animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;\n          animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards; }\n\n.checkmark {\n  width: 56px;\n  height: 56px;\n  border-radius: 50%;\n  display: block;\n  stroke-width: 2;\n  stroke: #fff;\n  stroke-miterlimit: 10;\n  margin: 2rem auto;\n  -webkit-box-shadow: inset 0px 0px 0px #7ac142;\n          box-shadow: inset 0px 0px 0px #7ac142;\n  -webkit-animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;\n          animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both; }\n\n.checkmark__check {\n  -webkit-transform-origin: 50% 50%;\n          transform-origin: 50% 50%;\n  stroke-dasharray: 48;\n  stroke-dashoffset: 48;\n  -webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;\n          animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards; }\n\n@-webkit-keyframes stroke {\n  100% {\n    stroke-dashoffset: 0; } }\n\n@keyframes stroke {\n  100% {\n    stroke-dashoffset: 0; } }\n\n@-webkit-keyframes scale {\n  0%, 100% {\n    -webkit-transform: none;\n            transform: none; }\n  50% {\n    -webkit-transform: scale3d(1.1, 1.1, 1);\n            transform: scale3d(1.1, 1.1, 1); } }\n\n@keyframes scale {\n  0%, 100% {\n    -webkit-transform: none;\n            transform: none; }\n  50% {\n    -webkit-transform: scale3d(1.1, 1.1, 1);\n            transform: scale3d(1.1, 1.1, 1); } }\n\n@-webkit-keyframes fill {\n  100% {\n    -webkit-box-shadow: inset 0px 0px 0px 30px #7ac142;\n            box-shadow: inset 0px 0px 0px 30px #7ac142; } }\n\n@keyframes fill {\n  100% {\n    -webkit-box-shadow: inset 0px 0px 0px 30px #7ac142;\n            box-shadow: inset 0px 0px 0px 30px #7ac142; } }\n\n@media (min-width: 768px) {\n  .quote-confirmation h1 {\n    font-size: 2rem; }\n  .quote-confirmation .arrow-down {\n    bottom: -220px;\n    height: 200px; } }\n\n@media (min-width: 992px) {\n  .option-selector .help-text {\n    font-size: 14px; }\n  .option-selector h3 {\n    font-size: 1.8rem; }\n  #tableBuilder {\n    margin: 2rem 0; }\n    #tableBuilder form {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n      min-height: 60vh; }\n  .multi-selector {\n    min-height: 368px; }\n    .multi-selector .option-label img {\n      width: 125px; } }\n", ""]);
 
 // exports
 
@@ -35237,10 +35261,152 @@ exports = module.exports = __webpack_require__(57)(undefined);
 
 
 // module
-exports.push([module.i, ".input-form {\n  display: block;\n  max-width: 350px;\n  margin: 0 auto; }\n\n.form-group {\n  display: block;\n  width: 100%;\n  text-align: left;\n  margin-bottom: 1rem; }\n\n.form-group label {\n    font-weight: bold;\n    line-height: 2;\n    text-transform: uppercase;\n    display: block;\n    font-size: 12px; }\n\n.form-group label span {\n      color: red; }\n\n.form-group input, .form-group textarea {\n    padding: 0.9rem;\n    background: none;\n    width: 100%;\n    border: solid 1px #a2a09d;\n    border-radius: 1px;\n    -webkit-transition: all 0.2s ease-in-out;\n    transition: all 0.2s ease-in-out;\n    font-size: 1rem;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; }\n\n.form-group input:focus, .form-group textarea:focus {\n      border-color: #21201f; }\n", ""]);
+exports.push([module.i, ".input-form {\n  width: 100%;\n  max-width: 100vw; }\n\n.form-group {\n  display: block;\n  width: 100%;\n  text-align: left;\n  margin-bottom: 1rem; }\n\n.form-group label {\n    font-weight: bold;\n    line-height: 2;\n    text-transform: uppercase;\n    display: block;\n    font-size: 12px; }\n\n.form-group label span {\n      color: red; }\n\n.form-group input, .form-group textarea {\n    width: 100%;\n    padding: 0.9rem;\n    background: none;\n    border: solid 1px #a2a09d;\n    border-radius: 1px;\n    -webkit-transition: all 0.2s ease-in-out;\n    transition: all 0.2s ease-in-out;\n    font-size: 1rem;\n    max-width: 80vw;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; }\n\n.form-group input:focus, .form-group textarea:focus {\n      border-color: #21201f; }\n\n@media (min-width: 768px) {\n  .input-form {\n    margin: 0 auto;\n    max-width: 350px; } }\n", ""]);
 
 // exports
 
+
+/***/ }),
+/* 423 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var About = function (_Component) {
+  _inherits(About, _Component);
+
+  function About() {
+    _classCallCheck(this, About);
+
+    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+  }
+
+  _createClass(About, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "section",
+        { id: "about-section" },
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          _react2.default.createElement(
+            "div",
+            { className: "main-section" },
+            _react2.default.createElement(
+              "div",
+              { className: "section-heading" },
+              _react2.default.createElement(
+                "h1",
+                { className: "display-1" },
+                "Uniquely Fabricated Gaming Tables"
+              ),
+              _react2.default.createElement(
+                "h2",
+                { className: "h--light text-secondary" },
+                "Who we are."
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return About;
+}(_react.Component);
+
+exports.default = About;
+
+/***/ }),
+/* 424 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Collections = function (_Component) {
+  _inherits(Collections, _Component);
+
+  function Collections() {
+    _classCallCheck(this, Collections);
+
+    return _possibleConstructorReturn(this, (Collections.__proto__ || Object.getPrototypeOf(Collections)).apply(this, arguments));
+  }
+
+  _createClass(Collections, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "section",
+        { id: "collections" },
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          _react2.default.createElement(
+            "div",
+            { className: "main-section" },
+            _react2.default.createElement(
+              "div",
+              { className: "section-heading" },
+              _react2.default.createElement(
+                "h1",
+                { className: "display-1" },
+                "Our Collections"
+              ),
+              _react2.default.createElement(
+                "h2",
+                { className: "h--light text-secondary" },
+                "Text about collections"
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Collections;
+}(_react.Component);
+
+exports.default = Collections;
 
 /***/ })
 /******/ ]);

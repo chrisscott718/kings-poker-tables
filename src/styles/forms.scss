@@ -1,15 +1,15 @@
 @import "./variables.scss";
 
 .input-form {
-  display: block;
-  max-width: 350px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 100vw;
 }
 .form-group {
   display: block;
   width: 100%;
   text-align: left;
   margin-bottom: 1rem;
+
   label {
     font-weight: bold;
     line-height: 2;
@@ -19,16 +19,31 @@
     span { color: red; }
   }
   input, textarea {
+    width: 100%;
     padding: 0.9rem;
     background: none;
-    width: 100%;
     border: solid 1px lighten($primary-dark, 50%);
     border-radius: 1px;
     transition: all 0.2s ease-in-out;
     font-size: 1rem;
+    max-width: 80vw;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     &:focus {
       border-color: $primary-dark;
     }
   }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .input-form {
+    margin: 0 auto;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+
 }

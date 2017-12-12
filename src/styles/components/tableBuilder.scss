@@ -105,7 +105,7 @@
     opacity: 0.7;
   }
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: normal;
   }
 }
@@ -235,17 +235,17 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
   padding: 2rem auto;
   position: relative;
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .arrow-down {
     content: '';
     display: block;
     position: absolute;
     left: 50%;
-    bottom: -220px;
+    bottom: -120px;
     width: 1px;
     background: $primary-dark;
-    height: 200px;
+    height: 100px;
     animation-name: revealTopDown;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -322,9 +322,26 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 }
 
 @media (min-width: 768px) {
+  .quote-confirmation {
+    h1 {
+      font-size: 2rem;
+    }
+    .arrow-down {
+      bottom: -220px;
+      height: 200px;
+    }
+  }
 }
 
 @media (min-width: 992px) {
+  .option-selector {
+    .help-text {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
   #tableBuilder {
     margin: 2rem 0;
     form {

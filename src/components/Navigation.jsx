@@ -55,7 +55,7 @@ const NavItems = ({ in: inProp, handleClick }) => (
             <button className="nav-link" onClick={handleClick.bind(this,'col')}>Collections</button>
           </li>
           <li className="nav-item">
-            <button className="nav-link" onClick={handleClick.bind(this,'sty')}>Our Story</button>
+            <button className="nav-link" onClick={handleClick.bind(this,'story')}>Our Story</button>
           </li>
           <li className="nav-item">
             <button className="nav-link" onClick={handleClick.bind(this,'con')}>Contact Us</button>

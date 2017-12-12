@@ -24,6 +24,7 @@ export default class MainHeader extends Component {
             <div className="header--cta animated fadeIn">
               <button className="btn btn-default" onClick={this.handleScroll}>Start Building</button>
             </div>
+            <h4>Call us <a href="tel:1-800-897-1189">800-897-1189</a></h4>
           </div>
           <div className="header--bottom">
             <span className="arrow arrow-down"></span>
